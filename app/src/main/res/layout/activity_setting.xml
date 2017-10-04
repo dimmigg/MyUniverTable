@@ -14,4 +14,13 @@
         android:key="list"
         android:summary="@string/setTextSizeSum"
         android:title="@string/setTextSize" />
+
+    <Preference
+        android:key="pref"
+        android:title="profit"
+        android:summary="test"
+
+        />
+
+
 </PreferenceScreen>

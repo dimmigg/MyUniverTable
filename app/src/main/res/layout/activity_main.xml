@@ -666,7 +666,7 @@
                             <TableRow style="@style/DayWeekText">
 
                                 <TextView
-                                    android:id="@+id/wed"
+                                    android:id="@+id/fri"
                                     style="@style/Text.weekName"
                                     android:text="@string/app_name" />
 

@@ -122,7 +122,11 @@ public class MainActivity extends AppCompatActivity {
                         new PrimaryDrawerItem()
                                 .withName(R.string.app_name)
                                 .withIcon(FontAwesome.Icon.faw_info_circle)
-                                .withIdentifier(2)
+                                .withIdentifier(2),
+                        new PrimaryDrawerItem()
+                                .withName(R.string.app_name)
+                                .withIcon(FontAwesome.Icon.faw_info_circle)
+                                .withIdentifier(3)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
@@ -131,13 +135,16 @@ public class MainActivity extends AppCompatActivity {
                         if (drawerItem instanceof Nameable) {
                             switch (drawerItem.getIdentifier()) {
                                 case 1:
-                                    Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-                                    startActivity(intent);
+                                    Intent setting = new Intent(MainActivity.this, SettingActivity.class);
+                                    startActivity(setting);
                                     break;
                                 case 2:
                                     Toast.makeText(MainActivity.this, R.string.app_name, Toast.LENGTH_LONG).show();
                                     break;
-
+                                case 3:
+                                    Intent edit = new Intent(MainActivity.this, EditActivity.class);
+                                    startActivity(edit);
+                                    break;
                             }
                         }
                         if (drawerItem instanceof Badgeable) {
