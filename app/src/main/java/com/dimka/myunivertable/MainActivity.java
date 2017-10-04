@@ -1,7 +1,9 @@
 package com.dimka.myunivertable;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private Drawer.Result drawerResult;//боковое меню
 
     private TextView mTextMessage;
+
+    SharedPreferences sp; //для хранения настроек
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -65,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        // получаем SharedPreferences, которое работает с файлом настроек
+        sp = PreferenceManager.getDefaultSharedPreferences(this);
     }
 
     private void initializeNavigationDrawer(Toolbar toolbar) {
@@ -150,6 +156,18 @@ public class MainActivity extends AppCompatActivity {
 
 
                 .build();
+    }
+
+
+    //при востановлениии изменяет размер
+    protected void onResume() {
+        super.onResume();
+        int TimeTextSize = Integer.parseInt(sp.getString("list", "1"));
+        if (TimeTextSize != 1) {
+            mTextMessage.setTextSize(TimeTextSize);
+        } else {
+            mTextMessage.setTextSize(14);
+        }
     }
 
 
