@@ -33,6 +33,7 @@
         <item name="android:layout_marginRight">1pt</item>
         <item name="android:gravity">left</item>
         <item name="android:maxLength">4</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="activity">
@@ -46,7 +47,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="Text.prepod">
+    <style name="Text.fam">
         <item name="android:textStyle">italic</item>
         <item name="android:textSize">13sp</item>
         <item name="android:layout_weight">6</item>
@@ -54,7 +55,7 @@
 
     </style>
 
-    <style name="Text.week">
+    <style name="Text.weekName">
         <item name="android:textColor">@color/week</item>
         <item name="android:textStyle">bold</item>
         <item name="android:shadowColor">#000000</item>
@@ -79,14 +80,14 @@
 
     <style name="week">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/week</item>
         <item name="android:orientation">horizontal</item>
     </style>
 
     <style name="DayWeek">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="android:orientation">vertical</item>
