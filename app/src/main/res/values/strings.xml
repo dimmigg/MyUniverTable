@@ -16,4 +16,5 @@
         <item>22</item>
         <item>24</item>
     </string-array>
+    <string name="title_activity_calendar">CalendarActivity</string>
 </resources>

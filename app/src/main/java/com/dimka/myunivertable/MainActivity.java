@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,21 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
+    WeekDay mon_1 = new WeekDay();
+    WeekDay tue_1 = new WeekDay();
+    WeekDay wed_1 = new WeekDay();
+    WeekDay thu_1 = new WeekDay();
+    WeekDay fri_1 = new WeekDay();
+    WeekDay sat_1 = new WeekDay();
+
+    WeekDay mon_2 = new WeekDay();
+    WeekDay tue_2 = new WeekDay();
+    WeekDay wed_2 = new WeekDay();
+    WeekDay thu_2 = new WeekDay();
+    WeekDay fri_2 = new WeekDay();
+    WeekDay sat_2 = new WeekDay();
+
+
     SharedPreferences sp; //для хранения настроек
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -45,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
+                    Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
+                    startActivity(intent);
                     return true;
             }
             return false;
@@ -64,8 +82,6 @@ public class MainActivity extends AppCompatActivity {
         initializeNavigationDrawer(toolbar);
 
 
-
-
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -83,12 +99,8 @@ public class MainActivity extends AppCompatActivity {
                 .withTranslucentActionBarCompatibility(false)
                 .withDrawerWidthPx(650)
 //                .withDisplayBelowToolbar(true)
-
-
 //                .withTranslucentNavigationBarProgrammatically(true)
-
 //                .setTranslucentStatusFlag(true)
-
 //                .withHeader(R.layout.drawer_header)
                 .withSelectedItem(-1)
                 .addDrawerItems(
@@ -112,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
                                 .withIcon(FontAwesome.Icon.faw_info_circle)
                                 .withIdentifier(2)
                 )
-
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id, IDrawerItem drawerItem) {
@@ -128,7 +139,6 @@ public class MainActivity extends AppCompatActivity {
                                     break;
 
                             }
-
                         }
                         if (drawerItem instanceof Badgeable) {
                             Badgeable badgeable = (Badgeable) drawerItem;
@@ -144,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }
                         }
-
                     }
 
 
@@ -152,12 +161,8 @@ public class MainActivity extends AppCompatActivity {
 //                        startActivity(intent);
 
                 })
-
-
-
                 .build();
     }
-
 
     //при востановлениии изменяет размер
     protected void onResume() {
