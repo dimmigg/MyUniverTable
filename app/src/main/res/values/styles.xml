@@ -12,4 +12,96 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text.time" >
+
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2pt</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+    <style name="Text.kab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">1pt</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLength">4</item>
+    </style>
+
+    <style name="activity">
+
+    </style>
+
+    <style name="Text.name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.prepod">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:layout_marginBottom">2pt</item>
+
+    </style>
+
+    <style name="Text.week">
+        <item name="android:textColor">@color/week</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TableRaw1">
+        <item name="android:background">@color/w1_tableRaw1</item>
+    </style>
+
+    <style name="TableRaw2">
+        <item name="android:background">@color/w1_tableRaw2</item>
+    </style>
+
+    <style name="botton">
+        <item name="android:background">@color/botton</item>
+    </style>
+
+    <style name="week">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/week</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="DayWeek">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:background">@drawable/myrect</item>
+
+
+    </style>
+    <style name="DayWeekText">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/text.week</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
 </resources>

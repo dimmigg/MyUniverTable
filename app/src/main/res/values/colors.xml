@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="w1_tableRaw1">#90CAF9</color>
+    <color name="w1_tableRaw2">#64B5F6</color>
+    <color name="w2_tableRaw1">#BBDEFB</color>
+    <color name="w2_tableRaw2">#FFAB91</color>
+    <color name="text.week">#0024ff</color>
+    <color name="background">#BBDEFB</color>
+    <color name="botton">#90CAF9</color>
+    <color name="week">#BBDEFB</color>
+    <color name="button_color1">#42A5F5</color>
+    <color name="button_color2">#2F96B4</color>
 </resources>
