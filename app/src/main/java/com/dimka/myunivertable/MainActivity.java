@@ -202,6 +202,7 @@ public class MainActivity extends AppCompatActivity {
 
     SharedPreferences sp; //для хранения настроек
 
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 

@@ -38,6 +38,7 @@
     <string name="sa">СБ</string>
     <string name="save">Сохранить</string>
     <string name="close">Закрыть</string>
+    <string name="onBackPressed">Нажмите снова для возвращения.</string>
 
 
 
