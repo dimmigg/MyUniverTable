@@ -209,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+                    print_all_1();
 //                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
@@ -467,5 +468,233 @@ public class MainActivity extends AppCompatActivity {
         } else {
 //            mTextMessage.setTextSize(14);
         }
+
+
+
     }
+
+
+
+    void print_all_1(){
+        mon_1.day_name="Понедельник";
+        tue_1.day_name="Вторник";
+        wed_1.day_name="Среда";
+        thu_1.day_name="Четверг";
+        fri_1.day_name="Пятница";
+        sat_1.day_name="Суббота";
+
+        print_mon(mon_1.day_name, mon_1.start_time1, mon_1.finish_time1, mon_1.predmet1, mon_1.kab1, mon_1.fam1,
+                mon_2.start_time2, mon_2.finish_time2, mon_2.predmet2, mon_2.kab2, mon_2.fam2,
+                mon_1.start_time3, mon_1.finish_time3, mon_1.predmet3, mon_1.kab3, mon_1.fam3,
+                mon_1.start_time4, mon_1.finish_time4, mon_1.predmet4, mon_1.kab4, mon_1.fam4);
+        print_tue(tue_1.day_name, tue_1.start_time1, tue_1.finish_time1, tue_1.predmet1, tue_1.kab1, tue_1.fam1,
+                tue_2.start_time2, tue_2.finish_time2, tue_2.predmet2, tue_2.kab2, tue_2.fam2,
+                tue_1.start_time3, tue_1.finish_time3, tue_1.predmet3, tue_1.kab3, tue_1.fam3,
+                tue_1.start_time4, tue_1.finish_time4, tue_1.predmet4, tue_1.kab4, tue_1.fam4);
+        print_wed(wed_1.day_name, wed_1.start_time1, wed_1.finish_time1, wed_1.predmet1, wed_1.kab1, wed_1.fam1,
+                wed_2.start_time2, wed_2.finish_time2, wed_2.predmet2, wed_2.kab2, wed_2.fam2,
+                wed_1.start_time3, wed_1.finish_time3, wed_1.predmet3, wed_1.kab3, wed_1.fam3,
+                wed_1.start_time4, wed_1.finish_time4, wed_1.predmet4, wed_1.kab4, wed_1.fam4);
+        print_thu(thu_1.day_name, thu_1.start_time1, thu_1.finish_time1, thu_1.predmet1, thu_1.kab1, thu_1.fam1,
+                thu_2.start_time2, thu_2.finish_time2, thu_2.predmet2, thu_2.kab2, thu_2.fam2,
+                thu_1.start_time3, thu_1.finish_time3, thu_1.predmet3, thu_1.kab3, thu_1.fam3,
+                thu_1.start_time4, thu_1.finish_time4, thu_1.predmet4, thu_1.kab4, thu_1.fam4);
+        print_fri(fri_1.day_name, fri_1.start_time1, fri_1.finish_time1, fri_1.predmet1, fri_1.kab1, fri_1.fam1,
+                fri_2.start_time2, fri_2.finish_time2, fri_2.predmet2, fri_2.kab2, fri_2.fam2,
+                fri_1.start_time3, fri_1.finish_time3, fri_1.predmet3, fri_1.kab3, fri_1.fam3,
+                fri_1.start_time4, fri_1.finish_time4, fri_1.predmet4, fri_1.kab4, fri_1.fam4);
+        print_sat(sat_1.day_name, sat_1.start_time1, sat_1.finish_time1, sat_1.predmet1, sat_1.kab1, sat_1.fam1,
+                sat_2.start_time2, sat_2.finish_time2, sat_2.predmet2, sat_2.kab2, sat_2.fam2,
+                sat_1.start_time3, sat_1.finish_time3, sat_1.predmet3, sat_1.kab3, sat_1.fam3,
+                sat_1.start_time4, sat_1.finish_time4, sat_1.predmet4, sat_1.kab4, sat_1.fam4);
+    }
+
+
+    void print_mon (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+               String start2, String finish2, String predmet2, String kab2, String fam2,
+               String start3, String finish3, String predmet3, String kab3, String fam3,
+               String start4, String finish4, String predmet4, String kab4, String fam4){
+
+        mTextMon.setText(day);
+        mTextMonStartTime1.setText(start1);
+        mTextMonFinishTime1.setText(finish1);
+        mTextMonPredmet1.setText(predmet1);
+        mTextMonKab1.setText(kab1);
+        mTextMonFam1.setText(fam1);
+
+        mTextMonStartTime2.setText(start2);
+        mTextMonFinishTime2.setText(finish2);
+        mTextMonPredmet2.setText(predmet2);
+        mTextMonKab2.setText(kab2);
+        mTextMonFam2.setText(fam2);
+
+        mTextMonStartTime3.setText(start3);
+        mTextMonFinishTime3.setText(finish3);
+        mTextMonPredmet3.setText(predmet3);
+        mTextMonKab3.setText(kab3);
+        mTextMonFam3.setText(fam3);
+
+        mTextMonStartTime4.setText(start4);
+        mTextMonFinishTime4.setText(finish4);
+        mTextMonPredmet4.setText(predmet4);
+        mTextMonKab4.setText(kab4);
+        mTextMonFam4.setText(fam4);
+    }
+
+    void print_tue (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+                    String start2, String finish2, String predmet2, String kab2, String fam2,
+                    String start3, String finish3, String predmet3, String kab3, String fam3,
+                    String start4, String finish4, String predmet4, String kab4, String fam4){
+
+        mTextTue.setText(day);
+        mTextTueStartTime1.setText(start1);
+        mTextTueFinishTime1.setText(finish1);
+        mTextTuePredmet1.setText(predmet1);
+        mTextTueKab1.setText(kab1);
+        mTextTueFam1.setText(fam1);
+
+        mTextTueStartTime2.setText(start2);
+        mTextTueFinishTime2.setText(finish2);
+        mTextTuePredmet2.setText(predmet2);
+        mTextTueKab2.setText(kab2);
+        mTextTueFam2.setText(fam2);
+
+        mTextTueStartTime3.setText(start3);
+        mTextTueFinishTime3.setText(finish3);
+        mTextTuePredmet3.setText(predmet3);
+        mTextTueKab3.setText(kab3);
+        mTextTueFam3.setText(fam3);
+
+        mTextTueStartTime4.setText(start4);
+        mTextTueFinishTime4.setText(finish4);
+        mTextTuePredmet4.setText(predmet4);
+        mTextTueKab4.setText(kab4);
+        mTextTueFam4.setText(fam4);
+    }
+
+    void print_wed (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+                    String start2, String finish2, String predmet2, String kab2, String fam2,
+                    String start3, String finish3, String predmet3, String kab3, String fam3,
+                    String start4, String finish4, String predmet4, String kab4, String fam4){
+
+        mTextWed.setText(day);
+        mTextWedStartTime1.setText(start1);
+        mTextWedFinishTime1.setText(finish1);
+        mTextWedPredmet1.setText(predmet1);
+        mTextWedKab1.setText(kab1);
+        mTextWedFam1.setText(fam1);
+
+        mTextWedStartTime2.setText(start2);
+        mTextWedFinishTime2.setText(finish2);
+        mTextWedPredmet2.setText(predmet2);
+        mTextWedKab2.setText(kab2);
+        mTextWedFam2.setText(fam2);
+
+        mTextWedStartTime3.setText(start3);
+        mTextWedFinishTime3.setText(finish3);
+        mTextWedPredmet3.setText(predmet3);
+        mTextWedKab3.setText(kab3);
+        mTextWedFam3.setText(fam3);
+
+        mTextWedStartTime4.setText(start4);
+        mTextWedFinishTime4.setText(finish4);
+        mTextWedPredmet4.setText(predmet4);
+        mTextWedKab4.setText(kab4);
+        mTextWedFam4.setText(fam4);
+    }
+
+    void print_thu (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+                    String start2, String finish2, String predmet2, String kab2, String fam2,
+                    String start3, String finish3, String predmet3, String kab3, String fam3,
+                    String start4, String finish4, String predmet4, String kab4, String fam4){
+
+        mTextThu.setText(day);
+        mTextThuStartTime1.setText(start1);
+        mTextThuFinishTime1.setText(finish1);
+        mTextThuPredmet1.setText(predmet1);
+        mTextThuKab1.setText(kab1);
+        mTextThuFam1.setText(fam1);
+
+        mTextThuStartTime2.setText(start2);
+        mTextThuFinishTime2.setText(finish2);
+        mTextThuPredmet2.setText(predmet2);
+        mTextThuKab2.setText(kab2);
+        mTextThuFam2.setText(fam2);
+
+        mTextThuStartTime3.setText(start3);
+        mTextThuFinishTime3.setText(finish3);
+        mTextThuPredmet3.setText(predmet3);
+        mTextThuKab3.setText(kab3);
+        mTextThuFam3.setText(fam3);
+
+        mTextThuStartTime4.setText(start4);
+        mTextThuFinishTime4.setText(finish4);
+        mTextThuPredmet4.setText(predmet4);
+        mTextThuKab4.setText(kab4);
+        mTextThuFam4.setText(fam4);
+    }
+
+    void print_fri (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+                    String start2, String finish2, String predmet2, String kab2, String fam2,
+                    String start3, String finish3, String predmet3, String kab3, String fam3,
+                    String start4, String finish4, String predmet4, String kab4, String fam4){
+
+        mTextFri.setText(day);
+        mTextFriStartTime1.setText(start1);
+        mTextFriFinishTime1.setText(finish1);
+        mTextFriPredmet1.setText(predmet1);
+        mTextFriKab1.setText(kab1);
+        mTextFriFam1.setText(fam1);
+
+        mTextFriStartTime2.setText(start2);
+        mTextFriFinishTime2.setText(finish2);
+        mTextFriPredmet2.setText(predmet2);
+        mTextFriKab2.setText(kab2);
+        mTextFriFam2.setText(fam2);
+
+        mTextFriStartTime3.setText(start3);
+        mTextFriFinishTime3.setText(finish3);
+        mTextFriPredmet3.setText(predmet3);
+        mTextFriKab3.setText(kab3);
+        mTextFriFam3.setText(fam3);
+
+        mTextFriStartTime4.setText(start4);
+        mTextFriFinishTime4.setText(finish4);
+        mTextFriPredmet4.setText(predmet4);
+        mTextFriKab4.setText(kab4);
+        mTextFriFam4.setText(fam4);
+    }
+
+    void print_sat (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+                    String start2, String finish2, String predmet2, String kab2, String fam2,
+                    String start3, String finish3, String predmet3, String kab3, String fam3,
+                    String start4, String finish4, String predmet4, String kab4, String fam4){
+
+        mTextSat.setText(day);
+        mTextSatStartTime1.setText(start1);
+        mTextSatFinishTime1.setText(finish1);
+        mTextSatPredmet1.setText(predmet1);
+        mTextSatKab1.setText(kab1);
+        mTextSatFam1.setText(fam1);
+
+        mTextSatStartTime2.setText(start2);
+        mTextSatFinishTime2.setText(finish2);
+        mTextSatPredmet2.setText(predmet2);
+        mTextSatKab2.setText(kab2);
+        mTextSatFam2.setText(fam2);
+
+        mTextSatStartTime3.setText(start3);
+        mTextSatFinishTime3.setText(finish3);
+        mTextSatPredmet3.setText(predmet3);
+        mTextSatKab3.setText(kab3);
+        mTextSatFam3.setText(fam3);
+
+        mTextSatStartTime4.setText(start4);
+        mTextSatFinishTime4.setText(finish4);
+        mTextSatPredmet4.setText(predmet4);
+        mTextSatKab4.setText(kab4);
+        mTextSatFam4.setText(fam4);
+    }
+
+
 }
