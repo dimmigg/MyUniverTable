@@ -22,4 +22,24 @@
     <string name="nechetn">Четная - знаменатель(2)</string>
 
 
+
+    --Для редактора пар--
+    <string name="weeks">Числитель/Знаменатель</string>
+    <string name="e_time">00:00</string>
+    <string name="e_name">Предмет</string>
+    <string name="e_fam">Преподаватель</string>
+    <string name="e_kab">100</string>
+    <string name="mo">ПН</string>
+    <string name="tu">ВТ</string>
+    <string name="we">СР</string>
+    <string name="th">ЧТ</string>
+    <string name="fr">ПТ</string>
+    <string name="sa">СБ</string>
+    <string name="save">Сохранить</string>
+    <string name="close">Закрыть</string>
+
+
+
+
+
 </resources>
