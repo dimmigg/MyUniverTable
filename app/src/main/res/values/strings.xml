@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Унив</string>
+    <string name="app_name">Расписание универ</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
@@ -17,6 +17,7 @@
         <item>24</item>
     </string-array>
     <string name="title_activity_calendar">Календарь</string>
+    <string name="title_activity_edit">Редактор пар</string>
 
     <string name="chetn">Не четная - числитель(1)</string>
     <string name="nechetn">Четная - знаменатель(2)</string>

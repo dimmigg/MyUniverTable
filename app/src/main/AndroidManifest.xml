@@ -25,7 +25,10 @@
             android:name=".CalendarActivity"
             android:label="@string/title_activity_calendar"
             android:theme="@style/AppTheme" />
-        <activity android:name=".EditActivity"></activity>
+        <activity
+            android:name=".EditActivity"
+            android:label="@string/title_activity_edit"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
