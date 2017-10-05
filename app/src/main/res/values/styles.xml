@@ -45,6 +45,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">3</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:maxLength">24</item>
     </style>
 
     <style name="Text.fam">
@@ -52,6 +53,7 @@
         <item name="android:textSize">13sp</item>
         <item name="android:layout_weight">6</item>
         <item name="android:layout_marginBottom">2pt</item>
+        <item name="android:maxLength">12</item>
 
     </style>
 

@@ -130,7 +130,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/mon_p3_name"
+                                            android:id="@+id/mon_p3_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -148,7 +148,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/mon_p3_prepod"
+                                            android:id="@+id/mon_p3_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
                                     </TableRow>
@@ -161,7 +161,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/mon_p4_name"
+                                            android:id="@+id/mon_p4_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -179,7 +179,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/mon_p4_prepod"
+                                            android:id="@+id/mon_p4_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
 
@@ -223,7 +223,7 @@
                                         <TextView
                                             android:id="@+id/tue_p1_predmet"
                                             style="@style/Text.name"
-                                            android:text="222222222222222222222222222222222222222222" />
+                                            android:text="45" />
 
                                         <TextView
                                             android:id="@+id/tue_p1_kab"
@@ -284,7 +284,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/tue_p3_name"
+                                            android:id="@+id/tue_p3_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -302,7 +302,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/tue_p3_prepod"
+                                            android:id="@+id/tue_p3_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
                                     </TableRow>
@@ -315,7 +315,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/tue_p4_name"
+                                            android:id="@+id/tue_p4_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -333,7 +333,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/tue_p4_prepod"
+                                            android:id="@+id/tue_p4_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
 
@@ -442,7 +442,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/wed_p3_name"
+                                            android:id="@+id/wed_p3_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -460,7 +460,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/wed_p3_prepod"
+                                            android:id="@+id/wed_p3_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
                                     </TableRow>
@@ -473,7 +473,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/wed_p4_name"
+                                            android:id="@+id/wed_p4_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -491,7 +491,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/wed_p4_prepod"
+                                            android:id="@+id/wed_p4_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
 
@@ -596,7 +596,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/thu_p3_name"
+                                            android:id="@+id/thu_p3_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -614,7 +614,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/thu_p3_prepod"
+                                            android:id="@+id/thu_p3_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
                                     </TableRow>
@@ -627,7 +627,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/thu_p4_name"
+                                            android:id="@+id/thu_p4_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -645,7 +645,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/thu_p4_prepod"
+                                            android:id="@+id/thu_p4_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
 
@@ -754,7 +754,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/fri_p3_name"
+                                            android:id="@+id/fri_p3_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -772,7 +772,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/fri_p3_prepod"
+                                            android:id="@+id/fri_p3_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
                                     </TableRow>
@@ -785,7 +785,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/fri_p4_name"
+                                            android:id="@+id/fri_p4_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -803,7 +803,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/fri_p4_prepod"
+                                            android:id="@+id/fri_p4_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
 
@@ -908,7 +908,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/sat_p3_name"
+                                            android:id="@+id/sat_p3_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -926,7 +926,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/sat_p3_prepod"
+                                            android:id="@+id/sat_p3_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
                                     </TableRow>
@@ -939,7 +939,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/sat_p4_name"
+                                            android:id="@+id/sat_p4_predmet"
                                             style="@style/Text.name"
                                             android:text="@string/app_name" />
 
@@ -957,7 +957,7 @@
                                             android:text="@string/app_name" />
 
                                         <TextView
-                                            android:id="@+id/sat_p4_prepod"
+                                            android:id="@+id/sat_p4_fam"
                                             style="@style/Text.fam"
                                             android:text="@string/app_name" />
 
