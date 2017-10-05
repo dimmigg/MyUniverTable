@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
         mTextMonFam2 = (TextView) findViewById(R.id.mon_p2_fam);
         mTextMonStartTime3 = (TextView) findViewById(R.id.mon_p3_start_time);
         mTextMonFinishTime3 = (TextView) findViewById(R.id.mon_p3_finish_time);
-        mTextMonPredmet3 = (TextView) findViewById(R.id.mon_p3_prepod);
+        mTextMonPredmet3 = (TextView) findViewById(R.id.mon_p3_predmet);
         mTextMonKab3 = (TextView) findViewById(R.id.mon_p3_kab);
         mTextMonFam3 = (TextView) findViewById(R.id.mon_p3_fam);
         mTextMonStartTime4 = (TextView) findViewById(R.id.mon_p4_start_time);
@@ -272,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
         mTextTueFam2 = (TextView) findViewById(R.id.tue_p2_fam);
         mTextTueStartTime3 = (TextView) findViewById(R.id.tue_p3_start_time);
         mTextTueFinishTime3 = (TextView) findViewById(R.id.tue_p3_finish_time);
-        mTextTuePredmet3 = (TextView) findViewById(R.id.tue_p3_prepod);
+        mTextTuePredmet3 = (TextView) findViewById(R.id.tue_p3_predmet);
         mTextTueKab3 = (TextView) findViewById(R.id.tue_p3_kab);
         mTextTueFam3 = (TextView) findViewById(R.id.tue_p3_fam);
         mTextTueStartTime4 = (TextView) findViewById(R.id.tue_p4_start_time);
@@ -294,7 +294,7 @@ public class MainActivity extends AppCompatActivity {
         mTextWedFam2 = (TextView) findViewById(R.id.wed_p2_fam);
         mTextWedStartTime3 = (TextView) findViewById(R.id.wed_p3_start_time);
         mTextWedFinishTime3 = (TextView) findViewById(R.id.wed_p3_finish_time);
-        mTextWedPredmet3 = (TextView) findViewById(R.id.wed_p3_prepod);
+        mTextWedPredmet3 = (TextView) findViewById(R.id.wed_p3_predmet);
         mTextWedKab3 = (TextView) findViewById(R.id.wed_p3_kab);
         mTextWedFam3 = (TextView) findViewById(R.id.wed_p3_fam);
         mTextWedStartTime4 = (TextView) findViewById(R.id.wed_p4_start_time);
@@ -316,7 +316,7 @@ public class MainActivity extends AppCompatActivity {
         mTextThuFam2 = (TextView) findViewById(R.id.thu_p2_fam);
         mTextThuStartTime3 = (TextView) findViewById(R.id.thu_p3_start_time);
         mTextThuFinishTime3 = (TextView) findViewById(R.id.thu_p3_finish_time);
-        mTextThuPredmet3 = (TextView) findViewById(R.id.thu_p3_prepod);
+        mTextThuPredmet3 = (TextView) findViewById(R.id.thu_p3_predmet);
         mTextThuKab3 = (TextView) findViewById(R.id.thu_p3_kab);
         mTextThuFam3 = (TextView) findViewById(R.id.thu_p3_fam);
         mTextThuStartTime4 = (TextView) findViewById(R.id.thu_p4_start_time);
@@ -338,7 +338,7 @@ public class MainActivity extends AppCompatActivity {
         mTextFriFam2 = (TextView) findViewById(R.id.fri_p2_fam);
         mTextFriStartTime3 = (TextView) findViewById(R.id.fri_p3_start_time);
         mTextFriFinishTime3 = (TextView) findViewById(R.id.fri_p3_finish_time);
-        mTextFriPredmet3 = (TextView) findViewById(R.id.fri_p3_prepod);
+        mTextFriPredmet3 = (TextView) findViewById(R.id.fri_p3_predmet);
         mTextFriKab3 = (TextView) findViewById(R.id.fri_p3_kab);
         mTextFriFam3 = (TextView) findViewById(R.id.fri_p3_fam);
         mTextFriStartTime4 = (TextView) findViewById(R.id.fri_p4_start_time);
@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
         mTextSatFam2 = (TextView) findViewById(R.id.sat_p2_fam);
         mTextSatStartTime3 = (TextView) findViewById(R.id.sat_p3_start_time);
         mTextSatFinishTime3 = (TextView) findViewById(R.id.sat_p3_finish_time);
-        mTextSatPredmet3 = (TextView) findViewById(R.id.sat_p3_prepod);
+        mTextSatPredmet3 = (TextView) findViewById(R.id.sat_p3_predmet);
         mTextSatKab3 = (TextView) findViewById(R.id.sat_p3_kab);
         mTextSatFam3 = (TextView) findViewById(R.id.sat_p3_fam);
         mTextSatStartTime4 = (TextView) findViewById(R.id.sat_p4_start_time);
