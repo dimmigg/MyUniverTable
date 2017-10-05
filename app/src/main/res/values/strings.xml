@@ -16,5 +16,10 @@
         <item>22</item>
         <item>24</item>
     </string-array>
-    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_calendar">Календарь</string>
+
+    <string name="chetn">Не четная - числитель(1)</string>
+    <string name="nechetn">Четная - знаменатель(2)</string>
+
+
 </resources>
