@@ -18,7 +18,7 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="Text.time" >
+    <style name="Text.Time" >
 
         <item name="android:textSize">12sp</item>
         <item name="android:layout_width">wrap_content</item>
@@ -27,7 +27,7 @@
         <item name="android:maxLength">5</item>
     </style>
 
-    <style name="Text.kab">
+    <style name="Text.Kab">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginRight">1pt</item>
@@ -40,7 +40,7 @@
 
     </style>
 
-    <style name="Text.name">
+    <style name="Text.Predmet">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">3</item>
@@ -48,7 +48,7 @@
         <item name="android:maxLength">24</item>
     </style>
 
-    <style name="Text.fam">
+    <style name="Text.Fam">
         <item name="android:textStyle">italic</item>
         <item name="android:textSize">13sp</item>
         <item name="android:layout_weight">6</item>
@@ -57,7 +57,7 @@
 
     </style>
 
-    <style name="Text.weekName">
+    <style name="Text.WeekName">
         <item name="android:textColor">@color/week</item>
         <item name="android:textStyle">bold</item>
         <item name="android:shadowColor">#000000</item>
@@ -76,11 +76,11 @@
         <item name="android:background">@color/w1_tableRaw2</item>
     </style>
 
-    <style name="botton">
+    <style name="Botton">
         <item name="android:background">@color/botton</item>
     </style>
 
-    <style name="week">
+    <style name="Week">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/week</item>

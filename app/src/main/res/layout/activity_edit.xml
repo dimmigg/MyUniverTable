@@ -68,22 +68,22 @@
 
                     <EditText
                         android:id="@+id/p1_time_start"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="3"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p1_predmet"
-                        style="@style/Text.name"
+                        style="@style/Text.Predmet"
                         android:ems="8"
                         android:gravity="start"
-                        android:hint="@string/e_name"
+                        android:hint="@string/e_predmet"
                         android:inputType="textPersonName" />
 
                     <EditText
                         android:id="@+id/p1_kab"
-                        style="@style/Text.kab"
+                        style="@style/Text.Kab"
                         android:ems="3"
                         android:hint="@string/e_kab"
                         android:inputType="number" />
@@ -96,14 +96,14 @@
 
                     <EditText
                         android:id="@+id/p1_time_finish"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p1_fam"
-                        style="@style/Text.fam"
+                        style="@style/Text.Fam"
                         android:ems="8"
                         android:gravity="start"
                         android:hint="@string/e_fam"
@@ -117,22 +117,22 @@
 
                     <EditText
                         android:id="@+id/p2_time_start"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p2_predmet"
-                        style="@style/Text.name"
+                        style="@style/Text.Predmet"
                         android:ems="8"
                         android:gravity="start"
-                        android:hint="@string/e_name"
+                        android:hint="@string/e_predmet"
                         android:inputType="textPersonName" />
 
                     <EditText
                         android:id="@+id/p2_kab"
-                        style="@style/Text.kab"
+                        style="@style/Text.Kab"
                         android:ems="2"
                         android:hint="@string/e_kab"
                         android:inputType="number" />
@@ -145,14 +145,14 @@
 
                     <EditText
                         android:id="@+id/p2_time_finish"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p2_fam"
-                        style="@style/Text.fam"
+                        style="@style/Text.Fam"
                         android:ems="8"
                         android:gravity="start"
                         android:hint="@string/e_fam"
@@ -166,22 +166,22 @@
 
                     <EditText
                         android:id="@+id/p3_time_start"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p3_predmet"
-                        style="@style/Text.name"
+                        style="@style/Text.Predmet"
                         android:ems="8"
                         android:gravity="start"
-                        android:hint="@string/e_name"
+                        android:hint="@string/e_predmet"
                         android:inputType="textPersonName" />
 
                     <EditText
                         android:id="@+id/p3_kab"
-                        style="@style/Text.kab"
+                        style="@style/Text.Kab"
                         android:ems="2"
                         android:hint="@string/e_kab"
                         android:inputType="number" />
@@ -194,14 +194,14 @@
 
                     <EditText
                         android:id="@+id/p3_time_start"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p3_fam"
-                        style="@style/Text.fam"
+                        style="@style/Text.Fam"
                         android:ems="8"
                         android:gravity="start"
                         android:hint="@string/e_fam"
@@ -215,22 +215,22 @@
 
                     <EditText
                         android:id="@+id/p4_time_start"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p4_predmet"
-                        style="@style/Text.name"
+                        style="@style/Text.Predmet"
                         android:ems="8"
                         android:gravity="start"
-                        android:hint="@string/e_name"
+                        android:hint="@string/e_predmet"
                         android:inputType="textPersonName" />
 
                     <EditText
                         android:id="@+id/p4_kab"
-                        style="@style/Text.kab"
+                        style="@style/Text.Kab"
                         android:ems="2"
                         android:hint="@string/e_kab"
                         android:inputType="number" />
@@ -243,14 +243,14 @@
 
                     <EditText
                         android:id="@+id/p4_time_finish"
-                        style="@style/Text.time"
+                        style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
                         android:inputType="time" />
 
                     <EditText
                         android:id="@+id/p4_fam"
-                        style="@style/Text.fam"
+                        style="@style/Text.Fam"
                         android:ems="8"
                         android:gravity="start"
                         android:hint="@string/e_fam"

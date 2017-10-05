@@ -12,7 +12,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +24,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.Nameable;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private Drawer.Result drawerResult;//боковое меню
 
@@ -185,19 +185,19 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextSatFam4;
 
 
-    WeekDay mon_1 = new WeekDay();
-    WeekDay tue_1 = new WeekDay();
-    WeekDay wed_1 = new WeekDay();
-    WeekDay thu_1 = new WeekDay();
-    WeekDay fri_1 = new WeekDay();
-    WeekDay sat_1 = new WeekDay();
+    static WeekDay mon_1 = new WeekDay();
+    static WeekDay tue_1 = new WeekDay();
+    static WeekDay wed_1 = new WeekDay();
+    static WeekDay thu_1 = new WeekDay();
+    static WeekDay fri_1 = new WeekDay();
+    static WeekDay sat_1 = new WeekDay();
 
-    WeekDay mon_2 = new WeekDay();
-    WeekDay tue_2 = new WeekDay();
-    WeekDay wed_2 = new WeekDay();
-    WeekDay thu_2 = new WeekDay();
-    WeekDay fri_2 = new WeekDay();
-    WeekDay sat_2 = new WeekDay();
+    static WeekDay mon_2 = new WeekDay();
+    static WeekDay tue_2 = new WeekDay();
+    static WeekDay wed_2 = new WeekDay();
+    static WeekDay thu_2 = new WeekDay();
+    static WeekDay fri_2 = new WeekDay();
+    static WeekDay sat_2 = new WeekDay();
 
 
     SharedPreferences sp; //для хранения настроек
