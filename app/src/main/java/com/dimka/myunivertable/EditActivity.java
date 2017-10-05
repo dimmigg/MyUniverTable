@@ -111,6 +111,39 @@ public class EditActivity extends AppCompatActivity {
                         Toast.makeText(EditActivity.this, "ntcn", Toast.LENGTH_SHORT).show();
                         onBackPressed();
                         break;
+                    case R.id.mo:
+                        Toast.makeText(EditActivity.this, "1", Toast.LENGTH_SHORT).show();
+                        a = 1;
+                        break;
+
+                    case R.id.tu:
+                        Toast.makeText(EditActivity.this, "2", Toast.LENGTH_SHORT).show();
+                        a = 2;
+                        break;
+
+                    case R.id.we:
+                        Toast.makeText(EditActivity.this, "3", Toast.LENGTH_SHORT).show();
+                        a = 3;
+                        break;
+
+                    case R.id.th:
+                        Toast.makeText(EditActivity.this, "4", Toast.LENGTH_SHORT).show();
+                        a = 4;
+                        break;
+
+                    case R.id.fr:
+                        Toast.makeText(EditActivity.this, "5", Toast.LENGTH_SHORT).show();
+                        a = 5;
+                        break;
+
+                    case R.id.sa:
+                        Toast.makeText(EditActivity.this, "6", Toast.LENGTH_SHORT).show();
+                        a = 6;
+                        break;
+
+                    case R.id.save:
+                        Toast.makeText(EditActivity.this, "save", Toast.LENGTH_SHORT).show();
+                        break;
                 }
 
 
