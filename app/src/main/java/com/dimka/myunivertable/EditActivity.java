@@ -440,9 +440,23 @@ public class EditActivity extends AppCompatActivity {
                     break;
 
                 case R.id.save:
-                    saveText(mon_1_p1_time_start, p1_time_start.getText().toString());
-                    Toast.makeText(EditActivity.this, p1_fam.getText().toString(), Toast.LENGTH_SHORT).show();
-                    Toast.makeText(EditActivity.this, MainActivity.SAVED_TEXT, Toast.LENGTH_SHORT).show();
+                    switch (a){
+                        case 1:
+//                            saveText(mon_1_p1_time_start, p1_time_start.getText().toString());
+                            saveText(MainActivity.mon_1.start_time1, p1_time_start.getText().toString());
+                            saveText(mon_1_p1_time_finish, p1_time_finish.getText().toString());
+                            saveText(mon_1_p1_predmet, p1_predmet.getText().toString());
+                            saveText(mon_1_p1_kab, p1_kab.getText().toString());
+                            saveText(mon_1_p1_fam, p1_fam.getText().toString());
+                            Toast.makeText(EditActivity.this,  MainActivity.mon_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
+                            break;
+
+                    }
+
+
+//                    saveText(mon_1_p1_time_start, p1_time_start.getText().toString());
+//                    Toast.makeText(EditActivity.this, p1_fam.getText().toString(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(EditActivity.this, MainActivity.SAVED_TEXT, Toast.LENGTH_SHORT).show();
                     break;
             }
 

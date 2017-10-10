@@ -184,9 +184,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextSatKab4;
     private TextView mTextSatFam4;
 
-    EditActivity mEdAct = new EditActivity();
-
-
     static WeekDay mon_1 = new WeekDay();
     static WeekDay tue_1 = new WeekDay();
     static WeekDay wed_1 = new WeekDay();
@@ -242,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mon_1.start_time1="mon_1_time_start1";
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -482,7 +480,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        mon_1.start_time1 = loadText(EditActivity.mon_1_p1_time_start);
+        mon_1.start_time1 = loadText(mon_1.start_time1);
+        mon_1.finish_time1 = loadText(EditActivity.mon_1_p1_time_finish);
+        mon_1.predmet1 = loadText(EditActivity.mon_1_p1_predmet);
+        mon_1.kab1 = loadText(EditActivity.mon_1_p1_kab);
+        mon_1.fam1 = loadText(EditActivity.mon_1_p1_fam);
         Toast.makeText(this, "onResume - " + mon_1.start_time1, Toast.LENGTH_SHORT).show();
 
         print_all_1();
@@ -753,21 +755,21 @@ public class MainActivity extends AppCompatActivity {
     String loadText(String name) {
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         String mesto = sPref.getString(name, "");
-        Toast.makeText(this, "in method - " + mesto, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "in method - " + mesto, Toast.LENGTH_SHORT).show();
         return mesto;
 //        mon_1.fam1 = SAVED_TEXT;
        // Toast.makeText(this, "nu a zdes"+ sPref.getString(SAVED_TEXT, ""), Toast.LENGTH_SHORT).show();
     }
 
-
-    void saveText() {
-        mEdAct.sPref = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor ed = mEdAct.sPref.edit();
-        ed.putString(mEdAct.SAVED_TEXT, EditActivity.p1_fam.getText().toString());
-        ed.apply();
-//        Toast.makeText(this, SAVED_TEXT, Toast.LENGTH_SHORT).show();
-
-    }
+//
+//    void saveText() {
+//        mEdAct.sPref = getPreferences(MODE_PRIVATE);
+//        SharedPreferences.Editor ed = mEdAct.sPref.edit();
+//        ed.putString(mEdAct.SAVED_TEXT, EditActivity.p1_fam.getText().toString());
+//        ed.apply();
+////        Toast.makeText(this, SAVED_TEXT, Toast.LENGTH_SHORT).show();
+//
+//    }
 
 
 
