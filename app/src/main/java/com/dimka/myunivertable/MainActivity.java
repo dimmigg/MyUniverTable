@@ -184,6 +184,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextSatKab4;
     private TextView mTextSatFam4;
 
+    EditActivity mEdAct = new EditActivity();
+
 
     static WeekDay mon_1 = new WeekDay();
     static WeekDay tue_1 = new WeekDay();
@@ -199,6 +201,10 @@ public class MainActivity extends AppCompatActivity {
     static WeekDay fri_2 = new WeekDay();
     static WeekDay sat_2 = new WeekDay();
 
+    static final String SAVED_TEXT="SAVED_TEXT";
+    static SharedPreferences sPref;
+
+//    final static String mon_1_p1_time_start = "mon_1_p1_time_start";
 
     SharedPreferences sp; //для хранения настроек
 
@@ -210,7 +216,10 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
+//                    mEdAct.loadText();
+//                    loadText();
                     print_all_1();
+
 //                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
@@ -238,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initializeNavigationDrawer(toolbar);
+        Toast.makeText(this, SAVED_TEXT, Toast.LENGTH_SHORT).show();
 
 
         mTextMon = (TextView) findViewById(R.id.mon);
@@ -472,6 +482,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+        mon_1.start_time1 = loadText(EditActivity.mon_1_p1_time_start);
+        Toast.makeText(this, "onResume - " + mon_1.start_time1, Toast.LENGTH_SHORT).show();
+
+        print_all_1();
+//        EditActivity.sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
+//        mTextMonPredmet2.setText(EditActivity.sPref.getString(SAVED_TEXT, ""));
+//        Toast.makeText(this, "Text:"+SAVED_TEXT, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -731,6 +748,29 @@ public class MainActivity extends AppCompatActivity {
         mTextSatKab4.setText(kab4);
         mTextSatFam4.setText(fam4);
     }
+
+
+    String loadText(String name) {
+        sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
+        String mesto = sPref.getString(name, "");
+        Toast.makeText(this, "in method - " + mesto, Toast.LENGTH_SHORT).show();
+        return mesto;
+//        mon_1.fam1 = SAVED_TEXT;
+       // Toast.makeText(this, "nu a zdes"+ sPref.getString(SAVED_TEXT, ""), Toast.LENGTH_SHORT).show();
+    }
+
+
+    void saveText() {
+        mEdAct.sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor ed = mEdAct.sPref.edit();
+        ed.putString(mEdAct.SAVED_TEXT, EditActivity.p1_fam.getText().toString());
+        ed.apply();
+//        Toast.makeText(this, SAVED_TEXT, Toast.LENGTH_SHORT).show();
+
+    }
+
+
+
 
 
 }
