@@ -787,10 +787,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         mon_1.start_time1 = loadText(mon_1.start_time1);
-        mon_1.finish_time1 = loadText(EditActivity.mon_1_p1_time_finish);
-        mon_1.predmet1 = loadText(EditActivity.mon_1_p1_predmet);
-        mon_1.kab1 = loadText(EditActivity.mon_1_p1_kab);
-        mon_1.fam1 = loadText(EditActivity.mon_1_p1_fam);
+        mon_1.finish_time1 = loadText(mon_1.finish_time1);
+        mon_1.predmet1 = loadText(mon_1.predmet1);
+        mon_1.kab1 = loadText(mon_1.kab1);
+        mon_1.fam1 = loadText(mon_1.fam1);
         Toast.makeText(this, "onResume - " + mon_1.start_time1, Toast.LENGTH_SHORT).show();
 
         print_all_1();
