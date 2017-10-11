@@ -193,7 +193,7 @@
                     android:layout_height="match_parent">
 
                     <EditText
-                        android:id="@+id/p3_time_start"
+                        android:id="@+id/p3_time_finish"
                         style="@style/Text.Time"
                         android:ems="2"
                         android:hint="@string/e_time"
