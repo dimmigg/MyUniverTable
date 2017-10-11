@@ -28,7 +28,8 @@
         <activity
             android:name=".EditActivity"
             android:label="@string/title_activity_edit"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden"/>
     </application>
 
 </manifest>

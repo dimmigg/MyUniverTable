@@ -343,13 +343,6 @@ public class EditActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        MainActivity.fri_1.fam1 = "test";
-    }
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
@@ -364,12 +357,12 @@ public class EditActivity extends AppCompatActivity {
         save = (Button) findViewById(R.id.save);
         close = (Button) findViewById(R.id.close);
 
-        mMo = (Button) findViewById(R.id.mo);
-        mTu = (Button) findViewById(R.id.tu);
-        mWe = (Button) findViewById(R.id.we);
-        mTh = (Button) findViewById(R.id.th);
-        mFr = (Button) findViewById(R.id.fr);
-        mSa = (Button) findViewById(R.id.sa);
+        mMo = (Button) findViewById(R.id.mon);
+        mTu = (Button) findViewById(R.id.tue);
+        mWe = (Button) findViewById(R.id.wed);
+        mTh = (Button) findViewById(R.id.thu);
+        mFr = (Button) findViewById(R.id.fri);
+        mSa = (Button) findViewById(R.id.sat);
 
         p1_predmet = (EditText) findViewById(R.id.p1_predmet);
         p1_fam = (EditText) findViewById(R.id.p1_fam);
@@ -425,36 +418,35 @@ public class EditActivity extends AppCompatActivity {
                     Toast.makeText(EditActivity.this, "ntcn", Toast.LENGTH_SHORT).show();
                     onBackPressed();
                     break;
-                case R.id.mo:
-                    Toast.makeText(EditActivity.this, "1", Toast.LENGTH_SHORT).show();
-                    a = 1;
-//                    Toast.makeText(EditActivity.this, MainActivity.SAVED_TEXT, Toast.LENGTH_SHORT).show();
-                    printMon1();
 
+                case R.id.mon:
+                    mDay.setText(MainActivity.mon_1.day_name);
+                    a = 1;
+                    printMon1();
                     break;
 
-                case R.id.tu:
-                    Toast.makeText(EditActivity.this, "2", Toast.LENGTH_SHORT).show();
+                case R.id.tue:
+                    mDay.setText(MainActivity.tue_1.day_name);
                     a = 2;
                     break;
 
-                case R.id.we:
-                    Toast.makeText(EditActivity.this, "3", Toast.LENGTH_SHORT).show();
+                case R.id.wed:
+                    mDay.setText(MainActivity.wed_1.day_name);
                     a = 3;
                     break;
 
-                case R.id.th:
-                    Toast.makeText(EditActivity.this, "4", Toast.LENGTH_SHORT).show();
+                case R.id.thu:
+                    mDay.setText(MainActivity.thu_1.day_name);
                     a = 4;
                     break;
 
-                case R.id.fr:
-                    Toast.makeText(EditActivity.this, "5", Toast.LENGTH_SHORT).show();
+                case R.id.fri:
+                    mDay.setText(MainActivity.fri_1.day_name);
                     a = 5;
                     break;
 
-                case R.id.sa:
-                    Toast.makeText(EditActivity.this, "6", Toast.LENGTH_SHORT).show();
+                case R.id.sat:
+                    mDay.setText(MainActivity.sat_1.day_name);
                     a = 6;
                     break;
 
@@ -462,28 +454,34 @@ public class EditActivity extends AppCompatActivity {
                     switch (a){
                         case 1:
                             saveMon1();
-                            Toast.makeText(EditActivity.this,  MainActivity.mon_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.mon_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
                             break;
                         case 2:
                             saveTue1();
-                            Toast.makeText(EditActivity.this,  MainActivity.tue_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.tue_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
                             break;
                         case 3:
                             saveWed1();
-                            Toast.makeText(EditActivity.this,  MainActivity.wed_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.wed_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
                             break;
                         case 4:
                             saveThu1();
-                            Toast.makeText(EditActivity.this,  MainActivity.thu_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.thu_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
                             break;
                         case 5:
                             saveFri1();
-                            Toast.makeText(EditActivity.this,  MainActivity.fri_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.fri_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
                             break;
                         case 6:
                             saveSat1();
+                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\tсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\fсохранено", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\bсохранено", Toast.LENGTH_SHORT).show();
                             Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
                             break;
+                        default:
+                            Toast.makeText(EditActivity.this,  "Выберите день недели", Toast.LENGTH_SHORT).show();
 
                     }
 
@@ -501,6 +499,11 @@ public class EditActivity extends AppCompatActivity {
     };
 
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(this, "Выберите день недели", Toast.LENGTH_SHORT).show();
+    }
 
     @Override
     public void onBackPressed() {

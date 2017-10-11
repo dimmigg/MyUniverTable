@@ -274,7 +274,7 @@
 
                     <Button
                         style="?android:attr/buttonBarStyle"
-                        android:id="@+id/mo"
+                        android:id="@+id/mon"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/default_margin"
@@ -284,7 +284,7 @@
 
                     <Button
                         style="?android:attr/buttonBarStyle"
-                        android:id="@+id/tu"
+                        android:id="@+id/tue"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/default_margin"
@@ -293,7 +293,7 @@
                         tools:ignore="ButtonStyle" />
 
                     <Button
-                        android:id="@+id/we"
+                        android:id="@+id/wed"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/default_margin"
@@ -308,7 +308,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/th"
+                        android:id="@+id/thu"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/default_margin"
@@ -317,7 +317,7 @@
                         style="?android:attr/buttonBarStyle"/>
 
                     <Button
-                        android:id="@+id/fr"
+                        android:id="@+id/fri"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/default_margin"
@@ -326,7 +326,7 @@
                         style="?android:attr/buttonBarStyle"/>
 
                     <Button
-                        android:id="@+id/sa"
+                        android:id="@+id/sat"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/default_margin"
