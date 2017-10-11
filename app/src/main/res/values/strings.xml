@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Расписание универ</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="week1">Числитель</string>
+    <string name="week2">Знаменатель</string>
+    <string name="calendar">Календарь</string>
 
+
+    <string name="setting">Настройки</string>
+    <string name="edit">Редактор</string>
+    <string name="about">О программе</string>
 
     <string name="setTextSize">Размер времени</string>
     <string name="setTextSizeSum">Выбрать размер текста</string>

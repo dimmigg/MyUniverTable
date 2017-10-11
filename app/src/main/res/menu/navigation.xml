@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:id="@+id/week1"
+        android:icon="@mipmap/ic_looks_one_white_24dp"
+        android:title="@string/week1" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/week2"
+        android:icon="@mipmap/ic_looks_two_white_24dp"
+        android:title="@string/week2" />
 
     <item
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:id="@+id/calendar"
+        android:icon="@mipmap/ic_event_note_white_24dp"
+        android:title="@string/calendar" />
 
 </menu>

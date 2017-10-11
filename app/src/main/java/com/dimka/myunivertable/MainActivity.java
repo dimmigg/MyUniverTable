@@ -212,19 +212,19 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.navigation_home:
+                case R.id.week1:
 //                    mEdAct.loadText();
 //                    loadText();
                     loadWeek1();
                     print_all_1();
 //                    mTextMessage.setText(R.string.title_home);
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.week2:
                     loadWeek2();
                     print_all_2();
 //                    mTextMessage.setText(R.string.title_dashboard);
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.calendar:
 //                    mTextMessage.setText(R.string.title_notifications);
                     Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
                     startActivity(intent);
@@ -244,8 +244,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initializeNavigationDrawer(toolbar);
-        Toast.makeText(this, SAVED_TEXT, Toast.LENGTH_SHORT).show();
-
 
         mTextMon = (TextView) findViewById(R.id.mon);
         mTextMonStartTime1 = (TextView) findViewById(R.id.mon_p1_start_time);
@@ -382,7 +380,7 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        navigation.setSelectedItemId(R.id.navigation_home);
+        navigation.setSelectedItemId(R.id.week1);
         // получаем SharedPreferences, которое работает с файлом настроек
         sp = PreferenceManager.getDefaultSharedPreferences(this);
     }
@@ -413,19 +411,21 @@ public class MainActivity extends AppCompatActivity {
 //                        new SecondaryDrawerItem().withName(R.string.drawer_item_contact).withIcon(FontAwesome.Icon.faw_github).withBadge("12+").withIdentifier(1)
 //                        new PrimaryDrawerItem()
 
+
+
                         new PrimaryDrawerItem()
-                                .withName(R.string.app_name)
+                                .withName(R.string.edit)
+                                .withIcon(FontAwesome.Icon.faw_edit)
+                                .withIdentifier(3),
+                        new PrimaryDrawerItem()
+                                .withName(R.string.setting)
                                 .withIcon(FontAwesome.Icon.faw_gear)
                                 .withIdentifier(1),
                         new DividerDrawerItem(),
                         new PrimaryDrawerItem()
-                                .withName(R.string.app_name)
+                                .withName(R.string.about)
                                 .withIcon(FontAwesome.Icon.faw_info_circle)
-                                .withIdentifier(2),
-                        new PrimaryDrawerItem()
-                                .withName(R.string.app_name)
-                                .withIcon(FontAwesome.Icon.faw_info_circle)
-                                .withIdentifier(3)
+                                .withIdentifier(2)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
