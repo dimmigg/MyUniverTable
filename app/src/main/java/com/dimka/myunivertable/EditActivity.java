@@ -55,7 +55,7 @@ public class EditActivity extends AppCompatActivity {
 
     static SharedPreferences sPref;
 
-
+    String mon1 = "Понедельник(1)";
     final static String mon_1_p1_time_start = "mon_1_p1_time_start";
     final static String tue_1_p1_time_start = "tue_1_p1_time_start";
     final static String wed_1_p1_time_start = "wed_1_p1_time_start";
@@ -411,7 +411,6 @@ public class EditActivity extends AppCompatActivity {
                     case R.id.close:
                         //  Intent intent = new Intent(EditActivity.this, MainActivity.class);
                         //  startActivity(intent);
-                        Toast.makeText(EditActivity.this, "ntcn", Toast.LENGTH_SHORT).show();
                         onBackPressed();
                         break;
 
@@ -455,7 +454,11 @@ public class EditActivity extends AppCompatActivity {
                         switch (a) {
                             case 1:
                                 saveMon1();
-                                Toast.makeText(EditActivity.this, R.string.mon1 + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EditActivity.this, mon1 + "\n\rсохранено\r", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EditActivity.this, mon1 + "\n\tсохранено\t", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EditActivity.this, mon1 + "\n\fсохранено\f", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EditActivity.this, mon1 + "\n\bсохранено\b", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(EditActivity.this, mon1 + "\nсохранено", Toast.LENGTH_SHORT).show();
                                 break;
                             case 2:
                                 saveTue1();
