@@ -3,24 +3,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <CheckBoxPreference
-        android:key="chb"
-        android:summary="Description of checkbox"
-        android:title="Checkbox" />
-
     <ListPreference
-        android:entries="@array/setArrTextSize"
-        android:entryValues="@array/setArrTextSize"
-        android:key="list"
-        android:summary="@string/setTextSizeSum"
-        android:title="@string/setTextSize" />
+        android:entries="@array/setArrWeekVal"
+        android:entryValues="@array/setArrWeek"
+        android:key="chek"
+        android:summary="@string/chkBoxSettingVal"
+        android:title="@string/chkBoxSetting" />
 
-    <Preference
-        android:key="pref"
-        android:title="profit"
-        android:summary="test"
 
-        />
+
+    <PreferenceScreen
+        android:key="screen"
+        android:summary="@string/setTextSizeVal"
+        android:title="@string/setTextSize">
+        <PreferenceCategory
+            android:summary="@string/setTextSizeVal"
+            android:title="@string/setTextSize">
+            <ListPreference
+                android:entries="@array/setArrTextSize"
+                android:entryValues="@array/setArrTextSize"
+                android:key="timeSize"
+                android:summary="@string/setTimeSizeVal"
+                android:title="@string/setTimeSize" />
+            <ListPreference
+                android:entries="@array/setArrTextSize"
+                android:entryValues="@array/setArrTextSize"
+                android:key="predmetSize"
+                android:summary="@string/setPredmetSizeVal"
+                android:title="@string/setPredmetSize" />
+            <ListPreference
+                android:entries="@array/setArrTextSize"
+                android:entryValues="@array/setArrTextSize"
+                android:key="kabSize"
+                android:summary="@string/setKabSizeVal"
+                android:title="@string/setKabSize" />
+            <ListPreference
+                android:entries="@array/setArrTextSize"
+                android:entryValues="@array/setArrTextSize"
+                android:key="famSize"
+                android:summary="@string/setFamSizeVal"
+                android:title="@string/setFamSize" />
+        </PreferenceCategory>
+
+    </PreferenceScreen>
 
 
 </PreferenceScreen>

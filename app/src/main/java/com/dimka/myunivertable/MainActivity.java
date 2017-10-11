@@ -479,10 +479,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
 //            mTextMessage.setTextSize(14);
         }
+
         loadWeek1();
         print_all_1();
 //        navigation.setSelectedItemId(R.id.navigation_home);
     }
+
 
 
 

@@ -1,27 +1,18 @@
 package com.dimka.myunivertable;
 
-import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.CalendarView;
-import android.widget.Toast;
-
-import com.mikepenz.iconics.typeface.FontAwesome;
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.model.DividerDrawerItem;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Badgeable;
-import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.Nameable;
+import android.widget.TextView;
 
 public class CalendarActivity extends AppCompatActivity {
 
-
+    SharedPreferences sp;
+    TextView mText1;
+    TextView mText2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +42,22 @@ public class CalendarActivity extends AppCompatActivity {
 //                        .append(" ").toString();
 //                Toast.makeText(getApplicationContext(), selectedDate, Toast.LENGTH_LONG).show();
 
+                mText1 = (TextView) findViewById(R.id.textWeek1);
+                mText2 = (TextView) findViewById(R.id.textWeek2);
 
             }
         });
+//
+//        int TimeTextSize = sp.getInt("chek", 0);
+//        if (TimeTextSize == 1) {
+//            mText1.setText(R.string.chetn);
+//            mText2.setText(R.string.nechetn);
+//        } else {
+//            mText1.setText(R.string.nechetn);
+//            mText2.setText(R.string.chetn);
+//        }
+
+//        boolean chk = Boolean.parseBoolean(sp.getBoolean("chb", true));
     }
 
 }
