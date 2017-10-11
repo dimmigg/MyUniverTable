@@ -9,8 +9,18 @@
     <string name="edit">Редактор</string>
     <string name="about">О программе</string>
 
-    <string name="setTextSize">Размер времени</string>
-    <string name="setTextSizeSum">Выбрать размер текста</string>
+    <string name="chkBoxSetting">Первая неделя четная/нечетная</string>
+
+    <string name="setTextSize">Размер шрифта</string>
+    <string name="setTextSizeSum">Выбрать размер шрифта</string>
+    <string name="setTimeSize">Временя</string>
+    <string name="setTimeSizeVal">Выбрать размер шрифта ремени</string>
+    <string name="setPredmetSize">Предмета</string>
+    <string name="setPredmetSizeVal">Выбрать размер шрифта предмета</string>
+    <string name="setKabSize">Кабинета</string>
+    <string name="setKabSizeVal">Выбрать размер кабинета</string>
+    <string name="setFamSize">Препожаватель</string>
+    <string name="setFamSizeVal">Выбрать размер шрифта препожавателя</string>
     <string-array name="setArrTextSize">
         <item>12</item>
         <item>14</item>
