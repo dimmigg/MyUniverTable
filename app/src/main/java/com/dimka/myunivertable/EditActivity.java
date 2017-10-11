@@ -54,7 +54,6 @@ public class EditActivity extends AppCompatActivity {
 
 
     static SharedPreferences sPref;
-    final String SAVED_TEXT = "SAVED_TEXT";
 
 
     final static String mon_1_p1_time_start = "mon_1_p1_time_start";
@@ -196,9 +195,6 @@ public class EditActivity extends AppCompatActivity {
     final static String thu_1_p4_fam = "thu_4_p4_time_fam";
     final static String fri_1_p4_fam = "fri_4_p4_time_fam";
     final static String sat_1_p4_fam = "sat_4_p4_time_fam";
-
-
-
 
 
     final static String mon_2_p1_time_start = "mon_1_p1_time_start";
@@ -409,93 +405,168 @@ public class EditActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
 
-            switch (view.getId()) {
+            if (mChkBox.isChecked()) {
+                switch (view.getId()) {
 
+                    case R.id.close:
+                        //  Intent intent = new Intent(EditActivity.this, MainActivity.class);
+                        //  startActivity(intent);
+                        Toast.makeText(EditActivity.this, "ntcn", Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                        break;
 
-                case R.id.close:
-                    //  Intent intent = new Intent(EditActivity.this, MainActivity.class);
-                    //  startActivity(intent);
-                    Toast.makeText(EditActivity.this, "ntcn", Toast.LENGTH_SHORT).show();
-                    onBackPressed();
-                    break;
+                    case R.id.mon:
+                        mDay.setText(MainActivity.mon_1.day_name);
+                        a = 1;
+                        printMon1();
+                        break;
 
-                case R.id.mon:
-                    mDay.setText(MainActivity.mon_1.day_name);
-                    a = 1;
-                    printMon1();
-                    break;
+                    case R.id.tue:
+                        mDay.setText(MainActivity.tue_1.day_name);
+                        a = 2;
+                        break;
 
-                case R.id.tue:
-                    mDay.setText(MainActivity.tue_1.day_name);
-                    a = 2;
-                    break;
+                    case R.id.wed:
+                        mDay.setText(MainActivity.wed_1.day_name);
+                        a = 3;
+                        break;
 
-                case R.id.wed:
-                    mDay.setText(MainActivity.wed_1.day_name);
-                    a = 3;
-                    break;
+                    case R.id.thu:
+                        mDay.setText(MainActivity.thu_1.day_name);
+                        a = 4;
+                        break;
 
-                case R.id.thu:
-                    mDay.setText(MainActivity.thu_1.day_name);
-                    a = 4;
-                    break;
+                    case R.id.fri:
+                        mDay.setText(MainActivity.fri_1.day_name);
+                        a = 5;
+                        break;
 
-                case R.id.fri:
-                    mDay.setText(MainActivity.fri_1.day_name);
-                    a = 5;
-                    break;
+                    case R.id.sat:
+                        mDay.setText(MainActivity.sat_1.day_name);
+                        a = 6;
+                        break;
 
-                case R.id.sat:
-                    mDay.setText(MainActivity.sat_1.day_name);
-                    a = 6;
-                    break;
+                    case R.id.save:
+                        switch (a) {
+                            case 1:
+                                saveMon1();
+                                Toast.makeText(EditActivity.this, MainActivity.mon_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 2:
+                                saveTue1();
+                                Toast.makeText(EditActivity.this, MainActivity.tue_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 3:
+                                saveWed1();
+                                Toast.makeText(EditActivity.this, MainActivity.wed_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 4:
+                                saveThu1();
+                                Toast.makeText(EditActivity.this, MainActivity.thu_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 5:
+                                saveFri1();
+                                Toast.makeText(EditActivity.this, MainActivity.fri_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 6:
+                                saveSat1();
+                                Toast.makeText(EditActivity.this, MainActivity.sat_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            default:
+                                Toast.makeText(EditActivity.this, "Выберите день недели", Toast.LENGTH_SHORT).show();
 
-                case R.id.save:
-                    switch (a){
-                        case 1:
-                            saveMon1();
-                            Toast.makeText(EditActivity.this,  MainActivity.mon_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 2:
-                            saveTue1();
-                            Toast.makeText(EditActivity.this,  MainActivity.tue_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 3:
-                            saveWed1();
-                            Toast.makeText(EditActivity.this,  MainActivity.wed_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 4:
-                            saveThu1();
-                            Toast.makeText(EditActivity.this,  MainActivity.thu_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 5:
-                            saveFri1();
-                            Toast.makeText(EditActivity.this,  MainActivity.fri_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
-                            break;
-                        case 6:
-                            saveSat1();
-                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\tсохранено", Toast.LENGTH_SHORT).show();
-                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
-                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\fсохранено", Toast.LENGTH_SHORT).show();
-                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\n\bсохранено", Toast.LENGTH_SHORT).show();
-                            Toast.makeText(EditActivity.this,  MainActivity.sat_1.day_name + "\nсохранено", Toast.LENGTH_SHORT).show();
-                            break;
-                        default:
-                            Toast.makeText(EditActivity.this,  "Выберите день недели", Toast.LENGTH_SHORT).show();
-
-                    }
+                        }
 
 
 //                    saveText(mon_1_p1_time_start, p1_time_start.getText().toString());
 //                    Toast.makeText(EditActivity.this, p1_fam.getText().toString(), Toast.LENGTH_SHORT).show();
 //                    Toast.makeText(EditActivity.this, MainActivity.SAVED_TEXT, Toast.LENGTH_SHORT).show();
-                    break;
+                        break;
+                }
+            } else {
+                switch (view.getId()) {
+
+                    case R.id.close:
+                        //  Intent intent = new Intent(EditActivity.this, MainActivity.class);
+                        //  startActivity(intent);
+                        Toast.makeText(EditActivity.this, "ntcn", Toast.LENGTH_SHORT).show();
+                        onBackPressed();
+                        break;
+
+                    case R.id.mon:
+                        mDay.setText(MainActivity.mon_2.day_name);
+                        a = 1;
+                        printMon1();
+                        break;
+
+                    case R.id.tue:
+                        mDay.setText(MainActivity.tue_2.day_name);
+                        a = 2;
+                        break;
+
+                    case R.id.wed:
+                        mDay.setText(MainActivity.wed_2.day_name);
+                        a = 3;
+                        break;
+
+                    case R.id.thu:
+                        mDay.setText(MainActivity.thu_2.day_name);
+                        a = 4;
+                        break;
+
+                    case R.id.fri:
+                        mDay.setText(MainActivity.fri_2.day_name);
+                        a = 5;
+                        break;
+
+                    case R.id.sat:
+                        mDay.setText(MainActivity.sat_2.day_name);
+                        a = 6;
+                        break;
+
+                    case R.id.save:
+                        switch (a) {
+                            case 1:
+                                saveMon2();
+                                Toast.makeText(EditActivity.this, MainActivity.mon_2.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 2:
+                                saveTue2();
+                                Toast.makeText(EditActivity.this, MainActivity.tue_2.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 3:
+                                saveWed2();
+                                Toast.makeText(EditActivity.this, MainActivity.wed_2.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 4:
+                                saveThu2();
+                                Toast.makeText(EditActivity.this, MainActivity.thu_2.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 5:
+                                saveFri2();
+                                Toast.makeText(EditActivity.this, MainActivity.fri_2.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            case 6:
+                                saveSat2();
+                                Toast.makeText(EditActivity.this, MainActivity.sat_2.day_name + "\n\rсохранено", Toast.LENGTH_SHORT).show();
+                                break;
+                            default:
+                                Toast.makeText(EditActivity.this, "Выберите день недели", Toast.LENGTH_SHORT).show();
+
+                        }
+
+
+//                    saveText(mon_1_p1_time_start, p1_time_start.getText().toString());
+//                    Toast.makeText(EditActivity.this, p1_fam.getText().toString(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(EditActivity.this, MainActivity.SAVED_TEXT, Toast.LENGTH_SHORT).show();
+                        break;
+
+                }
+
+
             }
 
-
         }
-
-
     };
 
 
@@ -528,13 +599,11 @@ public class EditActivity extends AppCompatActivity {
 
     String loadText(String weekDay) {
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
-        String text = sPref.getString(weekDay,"");
+        String text = sPref.getString(weekDay, "");
         return text;
-       // String savedText = sPref.getString(SAVED_TEXT, "");
+        // String savedText = sPref.getString(SAVED_TEXT, "");
         //Toast.makeText(this, "a tut text" + savedText, Toast.LENGTH_SHORT).show();
     }
-
-
 
 
     private void printMon1() {
@@ -570,25 +639,25 @@ public class EditActivity extends AppCompatActivity {
         saveText(mon_1_p1_time_finish, p1_time_finish.getText().toString());
         saveText(mon_1_p1_predmet, p1_predmet.getText().toString());
         saveText(mon_1_p1_kab, p1_kab.getText().toString());
-        saveText(mon_1_p1_fam ,p1_fam.getText().toString());
+        saveText(mon_1_p1_fam, p1_fam.getText().toString());
 
         saveText(mon_1_p2_time_start, p2_time_start.getText().toString());
         saveText(mon_1_p2_time_finish, p2_time_finish.getText().toString());
         saveText(mon_1_p2_predmet, p2_predmet.getText().toString());
         saveText(mon_1_p2_kab, p2_kab.getText().toString());
-        saveText(mon_1_p2_fam ,p2_fam.getText().toString());
+        saveText(mon_1_p2_fam, p2_fam.getText().toString());
 
         saveText(mon_1_p3_time_start, p3_time_start.getText().toString());
         saveText(mon_1_p3_time_finish, p3_time_finish.getText().toString());
         saveText(mon_1_p3_predmet, p3_predmet.getText().toString());
         saveText(mon_1_p3_kab, p3_kab.getText().toString());
-        saveText(mon_1_p3_fam ,p3_fam.getText().toString());
+        saveText(mon_1_p3_fam, p3_fam.getText().toString());
 
         saveText(mon_1_p4_time_start, p4_time_start.getText().toString());
         saveText(mon_1_p4_time_finish, p4_time_finish.getText().toString());
         saveText(mon_1_p4_predmet, p4_predmet.getText().toString());
         saveText(mon_1_p4_kab, p4_kab.getText().toString());
-        saveText(mon_1_p4_fam ,p4_fam.getText().toString());
+        saveText(mon_1_p4_fam, p4_fam.getText().toString());
 
     }
 
@@ -597,25 +666,25 @@ public class EditActivity extends AppCompatActivity {
         saveText(tue_1_p1_time_finish, p1_time_finish.getText().toString());
         saveText(tue_1_p1_predmet, p1_predmet.getText().toString());
         saveText(tue_1_p1_kab, p1_kab.getText().toString());
-        saveText(tue_1_p1_fam ,p1_fam.getText().toString());
+        saveText(tue_1_p1_fam, p1_fam.getText().toString());
 
         saveText(tue_1_p2_time_start, p2_time_start.getText().toString());
         saveText(tue_1_p2_time_finish, p2_time_finish.getText().toString());
         saveText(tue_1_p2_predmet, p2_predmet.getText().toString());
         saveText(tue_1_p2_kab, p2_kab.getText().toString());
-        saveText(tue_1_p2_fam ,p2_fam.getText().toString());
+        saveText(tue_1_p2_fam, p2_fam.getText().toString());
 
         saveText(tue_1_p3_time_start, p3_time_start.getText().toString());
         saveText(tue_1_p3_time_finish, p3_time_finish.getText().toString());
         saveText(tue_1_p3_predmet, p3_predmet.getText().toString());
         saveText(tue_1_p3_kab, p3_kab.getText().toString());
-        saveText(tue_1_p3_fam ,p3_fam.getText().toString());
+        saveText(tue_1_p3_fam, p3_fam.getText().toString());
 
         saveText(tue_1_p4_time_start, p4_time_start.getText().toString());
         saveText(tue_1_p4_time_finish, p4_time_finish.getText().toString());
         saveText(tue_1_p4_predmet, p4_predmet.getText().toString());
         saveText(tue_1_p4_kab, p4_kab.getText().toString());
-        saveText(tue_1_p4_fam ,p4_fam.getText().toString());
+        saveText(tue_1_p4_fam, p4_fam.getText().toString());
 
     }
 
@@ -624,25 +693,25 @@ public class EditActivity extends AppCompatActivity {
         saveText(wed_1_p1_time_finish, p1_time_finish.getText().toString());
         saveText(wed_1_p1_predmet, p1_predmet.getText().toString());
         saveText(wed_1_p1_kab, p1_kab.getText().toString());
-        saveText(wed_1_p1_fam ,p1_fam.getText().toString());
+        saveText(wed_1_p1_fam, p1_fam.getText().toString());
 
         saveText(wed_1_p2_time_start, p2_time_start.getText().toString());
         saveText(wed_1_p2_time_finish, p2_time_finish.getText().toString());
         saveText(wed_1_p2_predmet, p2_predmet.getText().toString());
         saveText(wed_1_p2_kab, p2_kab.getText().toString());
-        saveText(wed_1_p2_fam ,p2_fam.getText().toString());
+        saveText(wed_1_p2_fam, p2_fam.getText().toString());
 
         saveText(wed_1_p3_time_start, p3_time_start.getText().toString());
         saveText(wed_1_p3_time_finish, p3_time_finish.getText().toString());
         saveText(wed_1_p3_predmet, p3_predmet.getText().toString());
         saveText(wed_1_p3_kab, p3_kab.getText().toString());
-        saveText(wed_1_p3_fam ,p3_fam.getText().toString());
+        saveText(wed_1_p3_fam, p3_fam.getText().toString());
 
         saveText(wed_1_p4_time_start, p4_time_start.getText().toString());
         saveText(wed_1_p4_time_finish, p4_time_finish.getText().toString());
         saveText(wed_1_p4_predmet, p4_predmet.getText().toString());
         saveText(wed_1_p4_kab, p4_kab.getText().toString());
-        saveText(wed_1_p4_fam ,p4_fam.getText().toString());
+        saveText(wed_1_p4_fam, p4_fam.getText().toString());
 
     }
 
@@ -651,25 +720,25 @@ public class EditActivity extends AppCompatActivity {
         saveText(thu_1_p1_time_finish, p1_time_finish.getText().toString());
         saveText(thu_1_p1_predmet, p1_predmet.getText().toString());
         saveText(thu_1_p1_kab, p1_kab.getText().toString());
-        saveText(thu_1_p1_fam ,p1_fam.getText().toString());
+        saveText(thu_1_p1_fam, p1_fam.getText().toString());
 
         saveText(thu_1_p2_time_start, p2_time_start.getText().toString());
         saveText(thu_1_p2_time_finish, p2_time_finish.getText().toString());
         saveText(thu_1_p2_predmet, p2_predmet.getText().toString());
         saveText(thu_1_p2_kab, p2_kab.getText().toString());
-        saveText(thu_1_p2_fam ,p2_fam.getText().toString());
+        saveText(thu_1_p2_fam, p2_fam.getText().toString());
 
         saveText(thu_1_p3_time_start, p3_time_start.getText().toString());
         saveText(thu_1_p3_time_finish, p3_time_finish.getText().toString());
         saveText(thu_1_p3_predmet, p3_predmet.getText().toString());
         saveText(thu_1_p3_kab, p3_kab.getText().toString());
-        saveText(thu_1_p3_fam ,p3_fam.getText().toString());
+        saveText(thu_1_p3_fam, p3_fam.getText().toString());
 
         saveText(thu_1_p4_time_start, p4_time_start.getText().toString());
         saveText(thu_1_p4_time_finish, p4_time_finish.getText().toString());
         saveText(thu_1_p4_predmet, p4_predmet.getText().toString());
         saveText(thu_1_p4_kab, p4_kab.getText().toString());
-        saveText(thu_1_p4_fam ,p4_fam.getText().toString());
+        saveText(thu_1_p4_fam, p4_fam.getText().toString());
 
     }
 
@@ -678,25 +747,25 @@ public class EditActivity extends AppCompatActivity {
         saveText(fri_1_p1_time_finish, p1_time_finish.getText().toString());
         saveText(fri_1_p1_predmet, p1_predmet.getText().toString());
         saveText(fri_1_p1_kab, p1_kab.getText().toString());
-        saveText(fri_1_p1_fam ,p1_fam.getText().toString());
+        saveText(fri_1_p1_fam, p1_fam.getText().toString());
 
         saveText(fri_1_p2_time_start, p2_time_start.getText().toString());
         saveText(fri_1_p2_time_finish, p2_time_finish.getText().toString());
         saveText(fri_1_p2_predmet, p2_predmet.getText().toString());
         saveText(fri_1_p2_kab, p2_kab.getText().toString());
-        saveText(fri_1_p2_fam ,p2_fam.getText().toString());
+        saveText(fri_1_p2_fam, p2_fam.getText().toString());
 
         saveText(fri_1_p3_time_start, p3_time_start.getText().toString());
         saveText(fri_1_p3_time_finish, p3_time_finish.getText().toString());
         saveText(fri_1_p3_predmet, p3_predmet.getText().toString());
         saveText(fri_1_p3_kab, p3_kab.getText().toString());
-        saveText(fri_1_p3_fam ,p3_fam.getText().toString());
+        saveText(fri_1_p3_fam, p3_fam.getText().toString());
 
         saveText(fri_1_p4_time_start, p4_time_start.getText().toString());
         saveText(fri_1_p4_time_finish, p4_time_finish.getText().toString());
         saveText(fri_1_p4_predmet, p4_predmet.getText().toString());
         saveText(fri_1_p4_kab, p4_kab.getText().toString());
-        saveText(fri_1_p4_fam ,p4_fam.getText().toString());
+        saveText(fri_1_p4_fam, p4_fam.getText().toString());
 
     }
 
@@ -705,25 +774,189 @@ public class EditActivity extends AppCompatActivity {
         saveText(sat_1_p1_time_finish, p1_time_finish.getText().toString());
         saveText(sat_1_p1_predmet, p1_predmet.getText().toString());
         saveText(sat_1_p1_kab, p1_kab.getText().toString());
-        saveText(sat_1_p1_fam ,p1_fam.getText().toString());
+        saveText(sat_1_p1_fam, p1_fam.getText().toString());
 
         saveText(sat_1_p2_time_start, p2_time_start.getText().toString());
         saveText(sat_1_p2_time_finish, p2_time_finish.getText().toString());
         saveText(sat_1_p2_predmet, p2_predmet.getText().toString());
         saveText(sat_1_p2_kab, p2_kab.getText().toString());
-        saveText(sat_1_p2_fam ,p2_fam.getText().toString());
+        saveText(sat_1_p2_fam, p2_fam.getText().toString());
 
         saveText(sat_1_p3_time_start, p3_time_start.getText().toString());
         saveText(sat_1_p3_time_finish, p3_time_finish.getText().toString());
         saveText(sat_1_p3_predmet, p3_predmet.getText().toString());
         saveText(sat_1_p3_kab, p3_kab.getText().toString());
-        saveText(sat_1_p3_fam ,p3_fam.getText().toString());
+        saveText(sat_1_p3_fam, p3_fam.getText().toString());
 
         saveText(sat_1_p4_time_start, p4_time_start.getText().toString());
         saveText(sat_1_p4_time_finish, p4_time_finish.getText().toString());
         saveText(sat_1_p4_predmet, p4_predmet.getText().toString());
         saveText(sat_1_p4_kab, p4_kab.getText().toString());
-        saveText(sat_1_p4_fam ,p4_fam.getText().toString());
+        saveText(sat_1_p4_fam, p4_fam.getText().toString());
+
+    }
+
+
+
+    private void saveMon2() {
+        saveText(mon_2_p1_time_start, p1_time_start.getText().toString());
+        saveText(mon_2_p1_time_finish, p1_time_finish.getText().toString());
+        saveText(mon_2_p1_predmet, p1_predmet.getText().toString());
+        saveText(mon_2_p1_kab, p1_kab.getText().toString());
+        saveText(mon_2_p1_fam, p1_fam.getText().toString());
+
+        saveText(mon_2_p2_time_start, p2_time_start.getText().toString());
+        saveText(mon_2_p2_time_finish, p2_time_finish.getText().toString());
+        saveText(mon_2_p2_predmet, p2_predmet.getText().toString());
+        saveText(mon_2_p2_kab, p2_kab.getText().toString());
+        saveText(mon_2_p2_fam, p2_fam.getText().toString());
+
+        saveText(mon_2_p3_time_start, p3_time_start.getText().toString());
+        saveText(mon_2_p3_time_finish, p3_time_finish.getText().toString());
+        saveText(mon_2_p3_predmet, p3_predmet.getText().toString());
+        saveText(mon_2_p3_kab, p3_kab.getText().toString());
+        saveText(mon_2_p3_fam, p3_fam.getText().toString());
+
+        saveText(mon_2_p4_time_start, p4_time_start.getText().toString());
+        saveText(mon_2_p4_time_finish, p4_time_finish.getText().toString());
+        saveText(mon_2_p4_predmet, p4_predmet.getText().toString());
+        saveText(mon_2_p4_kab, p4_kab.getText().toString());
+        saveText(mon_2_p4_fam, p4_fam.getText().toString());
+
+    }
+
+    private void saveTue2() {
+        saveText(tue_2_p1_time_start, p1_time_start.getText().toString());
+        saveText(tue_2_p1_time_finish, p1_time_finish.getText().toString());
+        saveText(tue_2_p1_predmet, p1_predmet.getText().toString());
+        saveText(tue_2_p1_kab, p1_kab.getText().toString());
+        saveText(tue_2_p1_fam, p1_fam.getText().toString());
+
+        saveText(tue_2_p2_time_start, p2_time_start.getText().toString());
+        saveText(tue_2_p2_time_finish, p2_time_finish.getText().toString());
+        saveText(tue_2_p2_predmet, p2_predmet.getText().toString());
+        saveText(tue_2_p2_kab, p2_kab.getText().toString());
+        saveText(tue_2_p2_fam, p2_fam.getText().toString());
+
+        saveText(tue_2_p3_time_start, p3_time_start.getText().toString());
+        saveText(tue_2_p3_time_finish, p3_time_finish.getText().toString());
+        saveText(tue_2_p3_predmet, p3_predmet.getText().toString());
+        saveText(tue_2_p3_kab, p3_kab.getText().toString());
+        saveText(tue_2_p3_fam, p3_fam.getText().toString());
+
+        saveText(tue_2_p4_time_start, p4_time_start.getText().toString());
+        saveText(tue_2_p4_time_finish, p4_time_finish.getText().toString());
+        saveText(tue_2_p4_predmet, p4_predmet.getText().toString());
+        saveText(tue_2_p4_kab, p4_kab.getText().toString());
+        saveText(tue_2_p4_fam, p4_fam.getText().toString());
+
+    }
+
+    private void saveWed2() {
+        saveText(wed_2_p1_time_start, p1_time_start.getText().toString());
+        saveText(wed_2_p1_time_finish, p1_time_finish.getText().toString());
+        saveText(wed_2_p1_predmet, p1_predmet.getText().toString());
+        saveText(wed_2_p1_kab, p1_kab.getText().toString());
+        saveText(wed_2_p1_fam, p1_fam.getText().toString());
+
+        saveText(wed_2_p2_time_start, p2_time_start.getText().toString());
+        saveText(wed_2_p2_time_finish, p2_time_finish.getText().toString());
+        saveText(wed_2_p2_predmet, p2_predmet.getText().toString());
+        saveText(wed_2_p2_kab, p2_kab.getText().toString());
+        saveText(wed_2_p2_fam, p2_fam.getText().toString());
+
+        saveText(wed_2_p3_time_start, p3_time_start.getText().toString());
+        saveText(wed_2_p3_time_finish, p3_time_finish.getText().toString());
+        saveText(wed_2_p3_predmet, p3_predmet.getText().toString());
+        saveText(wed_2_p3_kab, p3_kab.getText().toString());
+        saveText(wed_2_p3_fam, p3_fam.getText().toString());
+
+        saveText(wed_2_p4_time_start, p4_time_start.getText().toString());
+        saveText(wed_2_p4_time_finish, p4_time_finish.getText().toString());
+        saveText(wed_2_p4_predmet, p4_predmet.getText().toString());
+        saveText(wed_2_p4_kab, p4_kab.getText().toString());
+        saveText(wed_2_p4_fam, p4_fam.getText().toString());
+
+    }
+
+    private void saveThu2() {
+        saveText(thu_2_p1_time_start, p1_time_start.getText().toString());
+        saveText(thu_2_p1_time_finish, p1_time_finish.getText().toString());
+        saveText(thu_2_p1_predmet, p1_predmet.getText().toString());
+        saveText(thu_2_p1_kab, p1_kab.getText().toString());
+        saveText(thu_2_p1_fam, p1_fam.getText().toString());
+
+        saveText(thu_2_p2_time_start, p2_time_start.getText().toString());
+        saveText(thu_2_p2_time_finish, p2_time_finish.getText().toString());
+        saveText(thu_2_p2_predmet, p2_predmet.getText().toString());
+        saveText(thu_2_p2_kab, p2_kab.getText().toString());
+        saveText(thu_2_p2_fam, p2_fam.getText().toString());
+
+        saveText(thu_2_p3_time_start, p3_time_start.getText().toString());
+        saveText(thu_2_p3_time_finish, p3_time_finish.getText().toString());
+        saveText(thu_2_p3_predmet, p3_predmet.getText().toString());
+        saveText(thu_2_p3_kab, p3_kab.getText().toString());
+        saveText(thu_2_p3_fam, p3_fam.getText().toString());
+
+        saveText(thu_2_p4_time_start, p4_time_start.getText().toString());
+        saveText(thu_2_p4_time_finish, p4_time_finish.getText().toString());
+        saveText(thu_2_p4_predmet, p4_predmet.getText().toString());
+        saveText(thu_2_p4_kab, p4_kab.getText().toString());
+        saveText(thu_2_p4_fam, p4_fam.getText().toString());
+
+    }
+
+    private void saveFri2() {
+        saveText(fri_2_p1_time_start, p1_time_start.getText().toString());
+        saveText(fri_2_p1_time_finish, p1_time_finish.getText().toString());
+        saveText(fri_2_p1_predmet, p1_predmet.getText().toString());
+        saveText(fri_2_p1_kab, p1_kab.getText().toString());
+        saveText(fri_2_p1_fam, p1_fam.getText().toString());
+
+        saveText(fri_2_p2_time_start, p2_time_start.getText().toString());
+        saveText(fri_2_p2_time_finish, p2_time_finish.getText().toString());
+        saveText(fri_2_p2_predmet, p2_predmet.getText().toString());
+        saveText(fri_2_p2_kab, p2_kab.getText().toString());
+        saveText(fri_2_p2_fam, p2_fam.getText().toString());
+
+        saveText(fri_2_p3_time_start, p3_time_start.getText().toString());
+        saveText(fri_2_p3_time_finish, p3_time_finish.getText().toString());
+        saveText(fri_2_p3_predmet, p3_predmet.getText().toString());
+        saveText(fri_2_p3_kab, p3_kab.getText().toString());
+        saveText(fri_2_p3_fam, p3_fam.getText().toString());
+
+        saveText(fri_2_p4_time_start, p4_time_start.getText().toString());
+        saveText(fri_2_p4_time_finish, p4_time_finish.getText().toString());
+        saveText(fri_2_p4_predmet, p4_predmet.getText().toString());
+        saveText(fri_2_p4_kab, p4_kab.getText().toString());
+        saveText(fri_2_p4_fam, p4_fam.getText().toString());
+
+    }
+
+    private void saveSat2() {
+        saveText(sat_2_p1_time_start, p1_time_start.getText().toString());
+        saveText(sat_2_p1_time_finish, p1_time_finish.getText().toString());
+        saveText(sat_2_p1_predmet, p1_predmet.getText().toString());
+        saveText(sat_2_p1_kab, p1_kab.getText().toString());
+        saveText(sat_2_p1_fam, p1_fam.getText().toString());
+
+        saveText(sat_2_p2_time_start, p2_time_start.getText().toString());
+        saveText(sat_2_p2_time_finish, p2_time_finish.getText().toString());
+        saveText(sat_2_p2_predmet, p2_predmet.getText().toString());
+        saveText(sat_2_p2_kab, p2_kab.getText().toString());
+        saveText(sat_2_p2_fam, p2_fam.getText().toString());
+
+        saveText(sat_2_p3_time_start, p3_time_start.getText().toString());
+        saveText(sat_2_p3_time_finish, p3_time_finish.getText().toString());
+        saveText(sat_2_p3_predmet, p3_predmet.getText().toString());
+        saveText(sat_2_p3_kab, p3_kab.getText().toString());
+        saveText(sat_2_p3_fam, p3_fam.getText().toString());
+
+        saveText(sat_2_p4_time_start, p4_time_start.getText().toString());
+        saveText(sat_2_p4_time_finish, p4_time_finish.getText().toString());
+        saveText(sat_2_p4_predmet, p4_predmet.getText().toString());
+        saveText(sat_2_p4_kab, p4_kab.getText().toString());
+        saveText(sat_2_p4_fam, p4_fam.getText().toString());
 
     }
 
