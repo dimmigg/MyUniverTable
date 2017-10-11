@@ -804,80 +804,80 @@ public class MainActivity extends AppCompatActivity {
 
 
     void print_all_1(){
-        mon_1.day_name="Понедельник(1)";
-        tue_1.day_name="Вторник(1)";
-        wed_1.day_name="Среда(1)";
-        thu_1.day_name="Четверг(1)";
-        fri_1.day_name="Пятница(1)";
-        sat_1.day_name="Суббота(1)";
+        mTextMon.setText(R.string.mon1);
+        mTextTue.setText(R.string.tue1);
+        mTextWed.setText(R.string.wed1);
+        mTextThu.setText(R.string.thu1);
+        mTextFri.setText(R.string.fri1);
+        mTextSat.setText(R.string.sat1);
 
-        print_mon(mon_1.day_name, mon_1.start_time1, mon_1.finish_time1, mon_1.predmet1, mon_1.kab1, mon_1.fam1,
+        print_mon(mon_1.start_time1, mon_1.finish_time1, mon_1.predmet1, mon_1.kab1, mon_1.fam1,
                 mon_1.start_time2, mon_1.finish_time2, mon_1.predmet2, mon_1.kab2, mon_1.fam2,
                 mon_1.start_time3, mon_1.finish_time3, mon_1.predmet3, mon_1.kab3, mon_1.fam3,
                 mon_1.start_time4, mon_1.finish_time4, mon_1.predmet4, mon_1.kab4, mon_1.fam4);
-        print_tue(tue_1.day_name, tue_1.start_time1, tue_1.finish_time1, tue_1.predmet1, tue_1.kab1, tue_1.fam1,
+        print_tue(tue_1.start_time1, tue_1.finish_time1, tue_1.predmet1, tue_1.kab1, tue_1.fam1,
                 tue_1.start_time2, tue_1.finish_time2, tue_1.predmet2, tue_1.kab2, tue_1.fam2,
                 tue_1.start_time3, tue_1.finish_time3, tue_1.predmet3, tue_1.kab3, tue_1.fam3,
                 tue_1.start_time4, tue_1.finish_time4, tue_1.predmet4, tue_1.kab4, tue_1.fam4);
-        print_wed(wed_1.day_name, wed_1.start_time1, wed_1.finish_time1, wed_1.predmet1, wed_1.kab1, wed_1.fam1,
+        print_wed(wed_1.start_time1, wed_1.finish_time1, wed_1.predmet1, wed_1.kab1, wed_1.fam1,
                 wed_1.start_time2, wed_1.finish_time2, wed_1.predmet2, wed_1.kab2, wed_1.fam2,
                 wed_1.start_time3, wed_1.finish_time3, wed_1.predmet3, wed_1.kab3, wed_1.fam3,
                 wed_1.start_time4, wed_1.finish_time4, wed_1.predmet4, wed_1.kab4, wed_1.fam4);
-        print_thu(thu_1.day_name, thu_1.start_time1, thu_1.finish_time1, thu_1.predmet1, thu_1.kab1, thu_1.fam1,
+        print_thu(thu_1.start_time1, thu_1.finish_time1, thu_1.predmet1, thu_1.kab1, thu_1.fam1,
                 thu_1.start_time2, thu_1.finish_time2, thu_1.predmet2, thu_1.kab2, thu_1.fam2,
                 thu_1.start_time3, thu_1.finish_time3, thu_1.predmet3, thu_1.kab3, thu_1.fam3,
                 thu_1.start_time4, thu_1.finish_time4, thu_1.predmet4, thu_1.kab4, thu_1.fam4);
-        print_fri(fri_1.day_name, fri_1.start_time1, fri_1.finish_time1, fri_1.predmet1, fri_1.kab1, fri_1.fam1,
+        print_fri(fri_1.start_time1, fri_1.finish_time1, fri_1.predmet1, fri_1.kab1, fri_1.fam1,
                 fri_1.start_time2, fri_1.finish_time2, fri_1.predmet2, fri_1.kab2, fri_1.fam2,
                 fri_1.start_time3, fri_1.finish_time3, fri_1.predmet3, fri_1.kab3, fri_1.fam3,
                 fri_1.start_time4, fri_1.finish_time4, fri_1.predmet4, fri_1.kab4, fri_1.fam4);
-        print_sat(sat_1.day_name, sat_1.start_time1, sat_1.finish_time1, sat_1.predmet1, sat_1.kab1, sat_1.fam1,
+        print_sat(sat_1.start_time1, sat_1.finish_time1, sat_1.predmet1, sat_1.kab1, sat_1.fam1,
                 sat_1.start_time2, sat_1.finish_time2, sat_1.predmet2, sat_1.kab2, sat_1.fam2,
                 sat_1.start_time3, sat_1.finish_time3, sat_1.predmet3, sat_1.kab3, sat_1.fam3,
                 sat_1.start_time4, sat_1.finish_time4, sat_1.predmet4, sat_1.kab4, sat_1.fam4);
     }
 
     void print_all_2(){
-        mon_2.day_name="Понедельник(2)";
-        tue_2.day_name="Вторник(2)";
-        wed_2.day_name="Среда(2)";
-        thu_2.day_name="Четверг(2)";
-        fri_2.day_name="Пятница(2)";
-        sat_2.day_name="Суббота(2)";
+        mTextMon.setText(R.string.mon2);
+        mTextTue.setText(R.string.tue2);
+        mTextWed.setText(R.string.wed2);
+        mTextThu.setText(R.string.thu2);
+        mTextFri.setText(R.string.fri2);
+        mTextSat.setText(R.string.sat2);
 
-        print_mon(mon_2.day_name, mon_2.start_time1, mon_2.finish_time1, mon_2.predmet1, mon_2.kab1, mon_2.fam1,
+        print_mon(mon_2.start_time1, mon_2.finish_time1, mon_2.predmet1, mon_2.kab1, mon_2.fam1,
                 mon_2.start_time2, mon_2.finish_time2, mon_2.predmet2, mon_2.kab2, mon_2.fam2,
                 mon_2.start_time3, mon_2.finish_time3, mon_2.predmet3, mon_2.kab3, mon_2.fam3,
                 mon_2.start_time4, mon_2.finish_time4, mon_2.predmet4, mon_2.kab4, mon_2.fam4);
-        print_tue(tue_2.day_name, tue_2.start_time1, tue_2.finish_time1, tue_2.predmet1, tue_2.kab1, tue_2.fam1,
+        print_tue(tue_2.start_time1, tue_2.finish_time1, tue_2.predmet1, tue_2.kab1, tue_2.fam1,
                 tue_2.start_time2, tue_2.finish_time2, tue_2.predmet2, tue_2.kab2, tue_2.fam2,
                 tue_2.start_time3, tue_2.finish_time3, tue_2.predmet3, tue_2.kab3, tue_2.fam3,
                 tue_2.start_time4, tue_2.finish_time4, tue_2.predmet4, tue_2.kab4, tue_2.fam4);
-        print_wed(wed_2.day_name, wed_2.start_time1, wed_2.finish_time1, wed_2.predmet1, wed_2.kab1, wed_2.fam1,
+        print_wed(wed_2.start_time1, wed_2.finish_time1, wed_2.predmet1, wed_2.kab1, wed_2.fam1,
                 wed_2.start_time2, wed_2.finish_time2, wed_2.predmet2, wed_2.kab2, wed_2.fam2,
                 wed_2.start_time3, wed_2.finish_time3, wed_2.predmet3, wed_2.kab3, wed_2.fam3,
                 wed_2.start_time4, wed_2.finish_time4, wed_2.predmet4, wed_2.kab4, wed_2.fam4);
-        print_thu(thu_2.day_name, thu_2.start_time1, thu_2.finish_time1, thu_2.predmet1, thu_2.kab1, thu_2.fam1,
+        print_thu(thu_2.start_time1, thu_2.finish_time1, thu_2.predmet1, thu_2.kab1, thu_2.fam1,
                 thu_2.start_time2, thu_2.finish_time2, thu_2.predmet2, thu_2.kab2, thu_2.fam2,
                 thu_2.start_time3, thu_2.finish_time3, thu_2.predmet3, thu_2.kab3, thu_2.fam3,
                 thu_2.start_time4, thu_2.finish_time4, thu_2.predmet4, thu_2.kab4, thu_2.fam4);
-        print_fri(fri_2.day_name, fri_2.start_time1, fri_2.finish_time1, fri_2.predmet1, fri_2.kab1, fri_2.fam1,
+        print_fri(fri_2.start_time1, fri_2.finish_time1, fri_2.predmet1, fri_2.kab1, fri_2.fam1,
                 fri_2.start_time2, fri_2.finish_time2, fri_2.predmet2, fri_2.kab2, fri_2.fam2,
                 fri_2.start_time3, fri_2.finish_time3, fri_2.predmet3, fri_2.kab3, fri_2.fam3,
                 fri_2.start_time4, fri_2.finish_time4, fri_2.predmet4, fri_2.kab4, fri_2.fam4);
-        print_sat(sat_2.day_name, sat_2.start_time1, sat_2.finish_time1, sat_2.predmet1, sat_2.kab1, sat_2.fam1,
+        print_sat(sat_2.start_time1, sat_2.finish_time1, sat_2.predmet1, sat_2.kab1, sat_2.fam1,
                 sat_2.start_time2, sat_2.finish_time2, sat_2.predmet2, sat_2.kab2, sat_2.fam2,
                 sat_2.start_time3, sat_2.finish_time3, sat_2.predmet3, sat_2.kab3, sat_2.fam3,
                 sat_2.start_time4, sat_2.finish_time4, sat_2.predmet4, sat_2.kab4, sat_2.fam4);
     }
 
 
-    void print_mon (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+    void print_mon (String start1, String finish1, String predmet1, String kab1, String fam1,
                String start2, String finish2, String predmet2, String kab2, String fam2,
                String start3, String finish3, String predmet3, String kab3, String fam3,
                String start4, String finish4, String predmet4, String kab4, String fam4){
 
-        mTextMon.setText(day);
+
         mTextMonStartTime1.setText(start1);
         mTextMonFinishTime1.setText(finish1);
         mTextMonPredmet1.setText(predmet1);
@@ -903,12 +903,12 @@ public class MainActivity extends AppCompatActivity {
         mTextMonFam4.setText(fam4);
     }
 
-    void print_tue (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+    void print_tue (String start1, String finish1, String predmet1, String kab1, String fam1,
                     String start2, String finish2, String predmet2, String kab2, String fam2,
                     String start3, String finish3, String predmet3, String kab3, String fam3,
                     String start4, String finish4, String predmet4, String kab4, String fam4){
 
-        mTextTue.setText(day);
+
         mTextTueStartTime1.setText(start1);
         mTextTueFinishTime1.setText(finish1);
         mTextTuePredmet1.setText(predmet1);
@@ -934,12 +934,12 @@ public class MainActivity extends AppCompatActivity {
         mTextTueFam4.setText(fam4);
     }
 
-    void print_wed (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+    void print_wed (String start1, String finish1, String predmet1, String kab1, String fam1,
                     String start2, String finish2, String predmet2, String kab2, String fam2,
                     String start3, String finish3, String predmet3, String kab3, String fam3,
                     String start4, String finish4, String predmet4, String kab4, String fam4){
 
-        mTextWed.setText(day);
+
         mTextWedStartTime1.setText(start1);
         mTextWedFinishTime1.setText(finish1);
         mTextWedPredmet1.setText(predmet1);
@@ -965,12 +965,12 @@ public class MainActivity extends AppCompatActivity {
         mTextWedFam4.setText(fam4);
     }
 
-    void print_thu (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+    void print_thu (String start1, String finish1, String predmet1, String kab1, String fam1,
                     String start2, String finish2, String predmet2, String kab2, String fam2,
                     String start3, String finish3, String predmet3, String kab3, String fam3,
                     String start4, String finish4, String predmet4, String kab4, String fam4){
 
-        mTextThu.setText(day);
+
         mTextThuStartTime1.setText(start1);
         mTextThuFinishTime1.setText(finish1);
         mTextThuPredmet1.setText(predmet1);
@@ -996,12 +996,12 @@ public class MainActivity extends AppCompatActivity {
         mTextThuFam4.setText(fam4);
     }
 
-    void print_fri (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+    void print_fri (String start1, String finish1, String predmet1, String kab1, String fam1,
                     String start2, String finish2, String predmet2, String kab2, String fam2,
                     String start3, String finish3, String predmet3, String kab3, String fam3,
                     String start4, String finish4, String predmet4, String kab4, String fam4){
 
-        mTextFri.setText(day);
+
         mTextFriStartTime1.setText(start1);
         mTextFriFinishTime1.setText(finish1);
         mTextFriPredmet1.setText(predmet1);
@@ -1027,12 +1027,11 @@ public class MainActivity extends AppCompatActivity {
         mTextFriFam4.setText(fam4);
     }
 
-    void print_sat (String day, String start1, String finish1, String predmet1, String kab1, String fam1,
+    void print_sat (String start1, String finish1, String predmet1, String kab1, String fam1,
                     String start2, String finish2, String predmet2, String kab2, String fam2,
                     String start3, String finish3, String predmet3, String kab3, String fam3,
                     String start4, String finish4, String predmet4, String kab4, String fam4){
 
-        mTextSat.setText(day);
         mTextSatStartTime1.setText(start1);
         mTextSatFinishTime1.setText(finish1);
         mTextSatPredmet1.setText(predmet1);
