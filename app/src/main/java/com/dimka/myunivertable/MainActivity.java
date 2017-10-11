@@ -215,11 +215,12 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
 //                    mEdAct.loadText();
 //                    loadText();
+                    loadWeek1();
                     print_all_1();
-
 //                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
+                    loadWeek2();
                     print_all_2();
 //                    mTextMessage.setText(R.string.title_dashboard);
                     return true;
@@ -785,7 +786,7 @@ public class MainActivity extends AppCompatActivity {
 //            mTextMessage.setTextSize(14);
         }
 
-        loadWeek1();
+
 
 //        mon_1.finish_time1 = loadText(mon_1.finish_time1);
 //        mon_1.predmet1 = loadText(mon_1.predmet1);
@@ -1222,6 +1223,162 @@ public class MainActivity extends AppCompatActivity {
         sat_1.predmet4 = loadText(EditActivity.sat_1_p4_predmet);
         sat_1.kab4 = loadText(EditActivity.sat_1_p4_kab);
         sat_1.fam4 = loadText(EditActivity.sat_1_p4_fam);
+    }
+
+    private void loadWeek2() {
+        mon_2.start_time1 = loadText(EditActivity.mon_2_p1_time_start);
+        mon_2.finish_time1 = loadText(EditActivity.mon_2_p1_time_finish);
+        mon_2.predmet1 = loadText(EditActivity.mon_2_p1_predmet);
+        mon_2.kab1 = loadText(EditActivity.mon_2_p1_kab);
+        mon_2.fam1 = loadText(EditActivity.mon_2_p1_fam);
+
+        mon_2.start_time2 = loadText(EditActivity.mon_2_p2_time_start);
+        mon_2.finish_time2 = loadText(EditActivity.mon_2_p2_time_finish);
+        mon_2.predmet2 = loadText(EditActivity.mon_2_p2_predmet);
+        mon_2.kab2 = loadText(EditActivity.mon_2_p2_kab);
+        mon_2.fam2 = loadText(EditActivity.mon_2_p2_fam);
+
+        mon_2.start_time3 = loadText(EditActivity.mon_2_p3_time_start);
+        mon_2.finish_time3 = loadText(EditActivity.mon_2_p3_time_finish);
+        mon_2.predmet3 = loadText(EditActivity.mon_2_p3_predmet);
+        mon_2.kab3 = loadText(EditActivity.mon_2_p3_kab);
+        mon_2.fam3 = loadText(EditActivity.mon_2_p3_fam);
+
+        mon_2.start_time4 = loadText(EditActivity.mon_2_p4_time_start);
+        mon_2.finish_time4 = loadText(EditActivity.mon_2_p4_time_finish);
+        mon_2.predmet4 = loadText(EditActivity.mon_2_p4_predmet);
+        mon_2.kab4 = loadText(EditActivity.mon_2_p4_kab);
+        mon_2.fam4 = loadText(EditActivity.mon_2_p4_fam);
+
+
+
+        tue_2.start_time1 = loadText(EditActivity.tue_2_p1_time_start);
+        tue_2.finish_time1 = loadText(EditActivity.tue_2_p1_time_finish);
+        tue_2.predmet1 = loadText(EditActivity.tue_2_p1_predmet);
+        tue_2.kab1 = loadText(EditActivity.tue_2_p1_kab);
+        tue_2.fam1 = loadText(EditActivity.tue_2_p1_fam);
+
+        tue_2.start_time2 = loadText(EditActivity.tue_2_p2_time_start);
+        tue_2.finish_time2 = loadText(EditActivity.tue_2_p2_time_finish);
+        tue_2.predmet2 = loadText(EditActivity.tue_2_p2_predmet);
+        tue_2.kab2 = loadText(EditActivity.tue_2_p2_kab);
+        tue_2.fam2 = loadText(EditActivity.tue_2_p2_fam);
+
+        tue_2.start_time3 = loadText(EditActivity.tue_2_p3_time_start);
+        tue_2.finish_time3 = loadText(EditActivity.tue_2_p3_time_finish);
+        tue_2.predmet3 = loadText(EditActivity.tue_2_p3_predmet);
+        tue_2.kab3 = loadText(EditActivity.tue_2_p3_kab);
+        tue_2.fam3 = loadText(EditActivity.tue_2_p3_fam);
+
+        tue_2.start_time4 = loadText(EditActivity.tue_2_p4_time_start);
+        tue_2.finish_time4 = loadText(EditActivity.tue_2_p4_time_finish);
+        tue_2.predmet4 = loadText(EditActivity.tue_2_p4_predmet);
+        tue_2.kab4 = loadText(EditActivity.tue_2_p4_kab);
+        tue_2.fam4 = loadText(EditActivity.tue_2_p4_fam);
+
+
+
+        wed_2.start_time1 = loadText(EditActivity.wed_2_p1_time_start);
+        wed_2.finish_time1 = loadText(EditActivity.wed_2_p1_time_finish);
+        wed_2.predmet1 = loadText(EditActivity.wed_2_p1_predmet);
+        wed_2.kab1 = loadText(EditActivity.wed_2_p1_kab);
+        wed_2.fam1 = loadText(EditActivity.wed_2_p1_fam);
+
+        wed_2.start_time2 = loadText(EditActivity.wed_2_p2_time_start);
+        wed_2.finish_time2 = loadText(EditActivity.wed_2_p2_time_finish);
+        wed_2.predmet2 = loadText(EditActivity.wed_2_p2_predmet);
+        wed_2.kab2 = loadText(EditActivity.wed_2_p2_kab);
+        wed_2.fam2 = loadText(EditActivity.wed_2_p2_fam);
+
+        wed_2.start_time3 = loadText(EditActivity.wed_2_p3_time_start);
+        wed_2.finish_time3 = loadText(EditActivity.wed_2_p3_time_finish);
+        wed_2.predmet3 = loadText(EditActivity.wed_2_p3_predmet);
+        wed_2.kab3 = loadText(EditActivity.wed_2_p3_kab);
+        wed_2.fam3 = loadText(EditActivity.wed_2_p3_fam);
+
+        wed_2.start_time4 = loadText(EditActivity.wed_2_p4_time_start);
+        wed_2.finish_time4 = loadText(EditActivity.wed_2_p4_time_finish);
+        wed_2.predmet4 = loadText(EditActivity.wed_2_p4_predmet);
+        wed_2.kab4 = loadText(EditActivity.wed_2_p4_kab);
+        wed_2.fam4 = loadText(EditActivity.wed_2_p4_fam);
+
+
+
+        thu_2.start_time1 = loadText(EditActivity.thu_2_p1_time_start);
+        thu_2.finish_time1 = loadText(EditActivity.thu_2_p1_time_finish);
+        thu_2.predmet1 = loadText(EditActivity.thu_2_p1_predmet);
+        thu_2.kab1 = loadText(EditActivity.thu_2_p1_kab);
+        thu_2.fam1 = loadText(EditActivity.thu_2_p1_fam);
+
+        thu_2.start_time2 = loadText(EditActivity.thu_2_p2_time_start);
+        thu_2.finish_time2 = loadText(EditActivity.thu_2_p2_time_finish);
+        thu_2.predmet2 = loadText(EditActivity.thu_2_p2_predmet);
+        thu_2.kab2 = loadText(EditActivity.thu_2_p2_kab);
+        thu_2.fam2 = loadText(EditActivity.thu_2_p2_fam);
+
+        thu_2.start_time3 = loadText(EditActivity.thu_2_p3_time_start);
+        thu_2.finish_time3 = loadText(EditActivity.thu_2_p3_time_finish);
+        thu_2.predmet3 = loadText(EditActivity.thu_2_p3_predmet);
+        thu_2.kab3 = loadText(EditActivity.thu_2_p3_kab);
+        thu_2.fam3 = loadText(EditActivity.thu_2_p3_fam);
+
+        thu_2.start_time4 = loadText(EditActivity.thu_2_p4_time_start);
+        thu_2.finish_time4 = loadText(EditActivity.thu_2_p4_time_finish);
+        thu_2.predmet4 = loadText(EditActivity.thu_2_p4_predmet);
+        thu_2.kab4 = loadText(EditActivity.thu_2_p4_kab);
+        thu_2.fam4 = loadText(EditActivity.thu_2_p4_fam);
+
+
+
+        fri_2.start_time1 = loadText(EditActivity.fri_2_p1_time_start);
+        fri_2.finish_time1 = loadText(EditActivity.fri_2_p1_time_finish);
+        fri_2.predmet1 = loadText(EditActivity.fri_2_p1_predmet);
+        fri_2.kab1 = loadText(EditActivity.fri_2_p1_kab);
+        fri_2.fam1 = loadText(EditActivity.fri_2_p1_fam);
+
+        fri_2.start_time2 = loadText(EditActivity.fri_2_p2_time_start);
+        fri_2.finish_time2 = loadText(EditActivity.fri_2_p2_time_finish);
+        fri_2.predmet2 = loadText(EditActivity.fri_2_p2_predmet);
+        fri_2.kab2 = loadText(EditActivity.fri_2_p2_kab);
+        fri_2.fam2 = loadText(EditActivity.fri_2_p2_fam);
+
+        fri_2.start_time3 = loadText(EditActivity.fri_2_p3_time_start);
+        fri_2.finish_time3 = loadText(EditActivity.fri_2_p3_time_finish);
+        fri_2.predmet3 = loadText(EditActivity.fri_2_p3_predmet);
+        fri_2.kab3 = loadText(EditActivity.fri_2_p3_kab);
+        fri_2.fam3 = loadText(EditActivity.fri_2_p3_fam);
+
+        fri_2.start_time4 = loadText(EditActivity.fri_2_p4_time_start);
+        fri_2.finish_time4 = loadText(EditActivity.fri_2_p4_time_finish);
+        fri_2.predmet4 = loadText(EditActivity.fri_2_p4_predmet);
+        fri_2.kab4 = loadText(EditActivity.fri_2_p4_kab);
+        fri_2.fam4 = loadText(EditActivity.fri_2_p4_fam);
+
+
+
+        sat_2.start_time1 = loadText(EditActivity.sat_2_p1_time_start);
+        sat_2.finish_time1 = loadText(EditActivity.sat_2_p1_time_finish);
+        sat_2.predmet1 = loadText(EditActivity.sat_2_p1_predmet);
+        sat_2.kab1 = loadText(EditActivity.sat_2_p1_kab);
+        sat_2.fam1 = loadText(EditActivity.sat_2_p1_fam);
+
+        sat_2.start_time2 = loadText(EditActivity.sat_2_p2_time_start);
+        sat_2.finish_time2 = loadText(EditActivity.sat_2_p2_time_finish);
+        sat_2.predmet2 = loadText(EditActivity.sat_2_p2_predmet);
+        sat_2.kab2 = loadText(EditActivity.sat_2_p2_kab);
+        sat_2.fam2 = loadText(EditActivity.sat_2_p2_fam);
+
+        sat_2.start_time3 = loadText(EditActivity.sat_2_p3_time_start);
+        sat_2.finish_time3 = loadText(EditActivity.sat_2_p3_time_finish);
+        sat_2.predmet3 = loadText(EditActivity.sat_2_p3_predmet);
+        sat_2.kab3 = loadText(EditActivity.sat_2_p3_kab);
+        sat_2.fam3 = loadText(EditActivity.sat_2_p3_fam);
+
+        sat_2.start_time4 = loadText(EditActivity.sat_2_p4_time_start);
+        sat_2.finish_time4 = loadText(EditActivity.sat_2_p4_time_finish);
+        sat_2.predmet4 = loadText(EditActivity.sat_2_p4_predmet);
+        sat_2.kab4 = loadText(EditActivity.sat_2_p4_kab);
+        sat_2.fam4 = loadText(EditActivity.sat_2_p4_fam);
     }
 
 

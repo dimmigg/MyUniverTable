@@ -91,146 +91,146 @@ public class EditActivity extends AppCompatActivity {
     final static String fri_1_p1_fam = "fri_1_p1_time_fam";
     final static String sat_1_p1_fam = "sat_1_p1_time_fam";
 
-    final static String mon_1_p2_time_start = "mon_2_p2_time_start";
-    final static String tue_1_p2_time_start = "tue_2_p2_time_start";
-    final static String wed_1_p2_time_start = "wed_2_p2_time_start";
-    final static String thu_1_p2_time_start = "thu_2_p2_time_start";
-    final static String fri_1_p2_time_start = "fri_2_p2_time_start";
-    final static String sat_1_p2_time_start = "sat_2_p2_time_start";
+    final static String mon_1_p2_time_start = "mon_1_p2_time_start";
+    final static String tue_1_p2_time_start = "tue_1_p2_time_start";
+    final static String wed_1_p2_time_start = "wed_1_p2_time_start";
+    final static String thu_1_p2_time_start = "thu_1_p2_time_start";
+    final static String fri_1_p2_time_start = "fri_1_p2_time_start";
+    final static String sat_1_p2_time_start = "sat_1_p2_time_start";
 
-    final static String mon_1_p2_time_finish = "mon_2_p2_time_finish";
-    final static String tue_1_p2_time_finish = "tue_2_p2_time_finish";
-    final static String wed_1_p2_time_finish = "wed_2_p2_time_finish";
-    final static String thu_1_p2_time_finish = "thu_2_p2_time_finish";
-    final static String fri_1_p2_time_finish = "fri_2_p2_time_finish";
-    final static String sat_1_p2_time_finish = "sat_2_p2_time_finish";
+    final static String mon_1_p2_time_finish = "mon_1_p2_time_finish";
+    final static String tue_1_p2_time_finish = "tue_1_p2_time_finish";
+    final static String wed_1_p2_time_finish = "wed_1_p2_time_finish";
+    final static String thu_1_p2_time_finish = "thu_1_p2_time_finish";
+    final static String fri_1_p2_time_finish = "fri_1_p2_time_finish";
+    final static String sat_1_p2_time_finish = "sat_1_p2_time_finish";
 
-    final static String mon_1_p2_predmet = "mon_2_p2_predmet";
-    final static String tue_1_p2_predmet = "tue_2_p2_predmet";
-    final static String wed_1_p2_predmet = "wed_2_p2_predmet";
-    final static String thu_1_p2_predmet = "thu_2_p2_predmet";
-    final static String fri_1_p2_predmet = "fri_2_p2_predmet";
-    final static String sat_1_p2_predmet = "sat_2_p2_predmet";
+    final static String mon_1_p2_predmet = "mon_1_p2_predmet";
+    final static String tue_1_p2_predmet = "tue_1_p2_predmet";
+    final static String wed_1_p2_predmet = "wed_1_p2_predmet";
+    final static String thu_1_p2_predmet = "thu_1_p2_predmet";
+    final static String fri_1_p2_predmet = "fri_1_p2_predmet";
+    final static String sat_1_p2_predmet = "sat_1_p2_predmet";
 
-    final static String mon_1_p2_kab = "mon_2_p2_time_kab";
-    final static String tue_1_p2_kab = "tue_2_p2_time_kab";
-    final static String wed_1_p2_kab = "wed_2_p2_time_kab";
-    final static String thu_1_p2_kab = "thu_2_p2_time_kab";
-    final static String fri_1_p2_kab = "fri_2_p2_time_kab";
-    final static String sat_1_p2_kab = "sat_2_p2_time_kab";
+    final static String mon_1_p2_kab = "mon_1_p2_time_kab";
+    final static String tue_1_p2_kab = "tue_1_p2_time_kab";
+    final static String wed_1_p2_kab = "wed_1_p2_time_kab";
+    final static String thu_1_p2_kab = "thu_1_p2_time_kab";
+    final static String fri_1_p2_kab = "fri_1_p2_time_kab";
+    final static String sat_1_p2_kab = "sat_1_p2_time_kab";
 
-    final static String mon_1_p2_fam = "mon_2_p2_time_fam";
-    final static String tue_1_p2_fam = "tue_2_p2_time_fam";
-    final static String wed_1_p2_fam = "wed_2_p2_time_fam";
-    final static String thu_1_p2_fam = "thu_2_p2_time_fam";
-    final static String fri_1_p2_fam = "fri_2_p2_time_fam";
-    final static String sat_1_p2_fam = "sat_2_p2_time_fam";
+    final static String mon_1_p2_fam = "mon_1_p2_time_fam";
+    final static String tue_1_p2_fam = "tue_1_p2_time_fam";
+    final static String wed_1_p2_fam = "wed_1_p2_time_fam";
+    final static String thu_1_p2_fam = "thu_1_p2_time_fam";
+    final static String fri_1_p2_fam = "fri_1_p2_time_fam";
+    final static String sat_1_p2_fam = "sat_1_p2_time_fam";
 
-    final static String mon_1_p3_time_start = "mon_3_p3_time_start";
-    final static String tue_1_p3_time_start = "tue_3_p3_time_start";
-    final static String wed_1_p3_time_start = "wed_3_p3_time_start";
-    final static String thu_1_p3_time_start = "thu_3_p3_time_start";
-    final static String fri_1_p3_time_start = "fri_3_p3_time_start";
-    final static String sat_1_p3_time_start = "sat_3_p3_time_start";
+    final static String mon_1_p3_time_start = "mon_1_p3_time_start";
+    final static String tue_1_p3_time_start = "tue_1_p3_time_start";
+    final static String wed_1_p3_time_start = "wed_1_p3_time_start";
+    final static String thu_1_p3_time_start = "thu_1_p3_time_start";
+    final static String fri_1_p3_time_start = "fri_1_p3_time_start";
+    final static String sat_1_p3_time_start = "sat_1_p3_time_start";
 
-    final static String mon_1_p3_time_finish = "mon_3_p3_time_finish";
-    final static String tue_1_p3_time_finish = "tue_3_p3_time_finish";
-    final static String wed_1_p3_time_finish = "wed_3_p3_time_finish";
-    final static String thu_1_p3_time_finish = "thu_3_p3_time_finish";
-    final static String fri_1_p3_time_finish = "fri_3_p3_time_finish";
-    final static String sat_1_p3_time_finish = "sat_3_p3_time_finish";
+    final static String mon_1_p3_time_finish = "mon_1_p3_time_finish";
+    final static String tue_1_p3_time_finish = "tue_1_p3_time_finish";
+    final static String wed_1_p3_time_finish = "wed_1_p3_time_finish";
+    final static String thu_1_p3_time_finish = "thu_1_p3_time_finish";
+    final static String fri_1_p3_time_finish = "fri_1_p3_time_finish";
+    final static String sat_1_p3_time_finish = "sat_1_p3_time_finish";
 
-    final static String mon_1_p3_predmet = "mon_3_p3_predmet";
-    final static String tue_1_p3_predmet = "tue_3_p3_predmet";
-    final static String wed_1_p3_predmet = "wed_3_p3_predmet";
-    final static String thu_1_p3_predmet = "thu_3_p3_predmet";
-    final static String fri_1_p3_predmet = "fri_3_p3_predmet";
-    final static String sat_1_p3_predmet = "sat_3_p3_predmet";
+    final static String mon_1_p3_predmet = "mon_1_p3_predmet";
+    final static String tue_1_p3_predmet = "tue_1_p3_predmet";
+    final static String wed_1_p3_predmet = "wed_1_p3_predmet";
+    final static String thu_1_p3_predmet = "thu_1_p3_predmet";
+    final static String fri_1_p3_predmet = "fri_1_p3_predmet";
+    final static String sat_1_p3_predmet = "sat_1_p3_predmet";
 
-    final static String mon_1_p3_kab = "mon_3_p3_time_kab";
-    final static String tue_1_p3_kab = "tue_3_p3_time_kab";
-    final static String wed_1_p3_kab = "wed_3_p3_time_kab";
-    final static String thu_1_p3_kab = "thu_3_p3_time_kab";
-    final static String fri_1_p3_kab = "fri_3_p3_time_kab";
-    final static String sat_1_p3_kab = "sat_3_p3_time_kab";
+    final static String mon_1_p3_kab = "mon_1_p3_time_kab";
+    final static String tue_1_p3_kab = "tue_1_p3_time_kab";
+    final static String wed_1_p3_kab = "wed_1_p3_time_kab";
+    final static String thu_1_p3_kab = "thu_1_p3_time_kab";
+    final static String fri_1_p3_kab = "fri_1_p3_time_kab";
+    final static String sat_1_p3_kab = "sat_1_p3_time_kab";
 
-    final static String mon_1_p3_fam = "mon_3_p3_time_fam";
-    final static String tue_1_p3_fam = "tue_3_p3_time_fam";
-    final static String wed_1_p3_fam = "wed_3_p3_time_fam";
-    final static String thu_1_p3_fam = "thu_3_p3_time_fam";
-    final static String fri_1_p3_fam = "fri_3_p3_time_fam";
-    final static String sat_1_p3_fam = "sat_3_p3_time_fam";
+    final static String mon_1_p3_fam = "mon_1_p3_time_fam";
+    final static String tue_1_p3_fam = "tue_1_p3_time_fam";
+    final static String wed_1_p3_fam = "wed_1_p3_time_fam";
+    final static String thu_1_p3_fam = "thu_1_p3_time_fam";
+    final static String fri_1_p3_fam = "fri_1_p3_time_fam";
+    final static String sat_1_p3_fam = "sat_1_p3_time_fam";
 
-    final static String mon_1_p4_time_start = "mon_4_p4_time_start";
-    final static String tue_1_p4_time_start = "tue_4_p4_time_start";
-    final static String wed_1_p4_time_start = "wed_4_p4_time_start";
-    final static String thu_1_p4_time_start = "thu_4_p4_time_start";
-    final static String fri_1_p4_time_start = "fri_4_p4_time_start";
-    final static String sat_1_p4_time_start = "sat_4_p4_time_start";
+    final static String mon_1_p4_time_start = "mon_1_p4_time_start";
+    final static String tue_1_p4_time_start = "tue_1_p4_time_start";
+    final static String wed_1_p4_time_start = "wed_1_p4_time_start";
+    final static String thu_1_p4_time_start = "thu_1_p4_time_start";
+    final static String fri_1_p4_time_start = "fri_1_p4_time_start";
+    final static String sat_1_p4_time_start = "sat_1_p4_time_start";
 
-    final static String mon_1_p4_time_finish = "mon_4_p4_time_finish";
-    final static String tue_1_p4_time_finish = "tue_4_p4_time_finish";
-    final static String wed_1_p4_time_finish = "wed_4_p4_time_finish";
-    final static String thu_1_p4_time_finish = "thu_4_p4_time_finish";
-    final static String fri_1_p4_time_finish = "fri_4_p4_time_finish";
-    final static String sat_1_p4_time_finish = "sat_4_p4_time_finish";
+    final static String mon_1_p4_time_finish = "mon_1_p4_time_finish";
+    final static String tue_1_p4_time_finish = "tue_1_p4_time_finish";
+    final static String wed_1_p4_time_finish = "wed_1_p4_time_finish";
+    final static String thu_1_p4_time_finish = "thu_1_p4_time_finish";
+    final static String fri_1_p4_time_finish = "fri_1_p4_time_finish";
+    final static String sat_1_p4_time_finish = "sat_1_p4_time_finish";
 
-    final static String mon_1_p4_predmet = "mon_4_p4_predmet";
-    final static String tue_1_p4_predmet = "tue_4_p4_predmet";
-    final static String wed_1_p4_predmet = "wed_4_p4_predmet";
-    final static String thu_1_p4_predmet = "thu_4_p4_predmet";
-    final static String fri_1_p4_predmet = "fri_4_p4_predmet";
-    final static String sat_1_p4_predmet = "sat_4_p4_predmet";
+    final static String mon_1_p4_predmet = "mon_1_p4_predmet";
+    final static String tue_1_p4_predmet = "tue_1_p4_predmet";
+    final static String wed_1_p4_predmet = "wed_1_p4_predmet";
+    final static String thu_1_p4_predmet = "thu_1_p4_predmet";
+    final static String fri_1_p4_predmet = "fri_1_p4_predmet";
+    final static String sat_1_p4_predmet = "sat_1_p4_predmet";
 
-    final static String mon_1_p4_kab = "mon_4_p4_time_kab";
-    final static String tue_1_p4_kab = "tue_4_p4_time_kab";
-    final static String wed_1_p4_kab = "wed_4_p4_time_kab";
-    final static String thu_1_p4_kab = "thu_4_p4_time_kab";
-    final static String fri_1_p4_kab = "fri_4_p4_time_kab";
-    final static String sat_1_p4_kab = "sat_4_p4_time_kab";
+    final static String mon_1_p4_kab = "mon_1_p4_time_kab";
+    final static String tue_1_p4_kab = "tue_1_p4_time_kab";
+    final static String wed_1_p4_kab = "wed_1_p4_time_kab";
+    final static String thu_1_p4_kab = "thu_1_p4_time_kab";
+    final static String fri_1_p4_kab = "fri_1_p4_time_kab";
+    final static String sat_1_p4_kab = "sat_1_p4_time_kab";
 
-    final static String mon_1_p4_fam = "mon_4_p4_time_fam";
-    final static String tue_1_p4_fam = "tue_4_p4_time_fam";
-    final static String wed_1_p4_fam = "wed_4_p4_time_fam";
-    final static String thu_1_p4_fam = "thu_4_p4_time_fam";
-    final static String fri_1_p4_fam = "fri_4_p4_time_fam";
-    final static String sat_1_p4_fam = "sat_4_p4_time_fam";
+    final static String mon_1_p4_fam = "mon_1_p4_time_fam";
+    final static String tue_1_p4_fam = "tue_1_p4_time_fam";
+    final static String wed_1_p4_fam = "wed_1_p4_time_fam";
+    final static String thu_1_p4_fam = "thu_1_p4_time_fam";
+    final static String fri_1_p4_fam = "fri_1_p4_time_fam";
+    final static String sat_1_p4_fam = "sat_1_p4_time_fam";
 
 
-    final static String mon_2_p1_time_start = "mon_1_p1_time_start";
-    final static String tue_2_p1_time_start = "tue_1_p1_time_start";
-    final static String wed_2_p1_time_start = "wed_1_p1_time_start";
-    final static String thu_2_p1_time_start = "thu_1_p1_time_start";
-    final static String fri_2_p1_time_start = "fri_1_p1_time_start";
-    final static String sat_2_p1_time_start = "sat_1_p1_time_start";
+    final static String mon_2_p1_time_start = "mon_2_p1_time_start";
+    final static String tue_2_p1_time_start = "tue_2_p1_time_start";
+    final static String wed_2_p1_time_start = "wed_2_p1_time_start";
+    final static String thu_2_p1_time_start = "thu_2_p1_time_start";
+    final static String fri_2_p1_time_start = "fri_2_p1_time_start";
+    final static String sat_2_p1_time_start = "sat_2_p1_time_start";
 
-    final static String mon_2_p1_time_finish = "mon_1_p1_time_finish";
-    final static String tue_2_p1_time_finish = "tue_1_p1_time_finish";
-    final static String wed_2_p1_time_finish = "wed_1_p1_time_finish";
-    final static String thu_2_p1_time_finish = "thu_1_p1_time_finish";
-    final static String fri_2_p1_time_finish = "fri_1_p1_time_finish";
-    final static String sat_2_p1_time_finish = "sat_1_p1_time_finish";
+    final static String mon_2_p1_time_finish = "mon_2_p1_time_finish";
+    final static String tue_2_p1_time_finish = "tue_2_p1_time_finish";
+    final static String wed_2_p1_time_finish = "wed_2_p1_time_finish";
+    final static String thu_2_p1_time_finish = "thu_2_p1_time_finish";
+    final static String fri_2_p1_time_finish = "fri_2_p1_time_finish";
+    final static String sat_2_p1_time_finish = "sat_2_p1_time_finish";
 
-    final static String mon_2_p1_predmet = "mon_1_p1_predmet";
-    final static String tue_2_p1_predmet = "tue_1_p1_predmet";
-    final static String wed_2_p1_predmet = "wed_1_p1_predmet";
-    final static String thu_2_p1_predmet = "thu_1_p1_predmet";
-    final static String fri_2_p1_predmet = "fri_1_p1_predmet";
-    final static String sat_2_p1_predmet = "sat_1_p1_predmet";
+    final static String mon_2_p1_predmet = "mon_2_p1_predmet";
+    final static String tue_2_p1_predmet = "tue_2_p1_predmet";
+    final static String wed_2_p1_predmet = "wed_2_p1_predmet";
+    final static String thu_2_p1_predmet = "thu_2_p1_predmet";
+    final static String fri_2_p1_predmet = "fri_2_p1_predmet";
+    final static String sat_2_p1_predmet = "sat_2_p1_predmet";
 
-    final static String mon_2_p1_kab = "mon_1_p1_time_kab";
-    final static String tue_2_p1_kab = "tue_1_p1_time_kab";
-    final static String wed_2_p1_kab = "wed_1_p1_time_kab";
-    final static String thu_2_p1_kab = "thu_1_p1_time_kab";
-    final static String fri_2_p1_kab = "fri_1_p1_time_kab";
-    final static String sat_2_p1_kab = "sat_1_p1_time_kab";
+    final static String mon_2_p1_kab = "mon_2_p1_time_kab";
+    final static String tue_2_p1_kab = "tue_2_p1_time_kab";
+    final static String wed_2_p1_kab = "wed_2_p1_time_kab";
+    final static String thu_2_p1_kab = "thu_2_p1_time_kab";
+    final static String fri_2_p1_kab = "fri_2_p1_time_kab";
+    final static String sat_2_p1_kab = "sat_2_p1_time_kab";
 
-    final static String mon_2_p1_fam = "mon_1_p1_time_fam";
-    final static String tue_2_p1_fam = "tue_1_p1_time_fam";
-    final static String wed_2_p1_fam = "wed_1_p1_time_fam";
-    final static String thu_2_p1_fam = "thu_1_p1_time_fam";
-    final static String fri_2_p1_fam = "fri_1_p1_time_fam";
-    final static String sat_2_p1_fam = "sat_1_p1_time_fam";
+    final static String mon_2_p1_fam = "mon_2_p1_time_fam";
+    final static String tue_2_p1_fam = "tue_2_p1_time_fam";
+    final static String wed_2_p1_fam = "wed_2_p1_time_fam";
+    final static String thu_2_p1_fam = "thu_2_p1_time_fam";
+    final static String fri_2_p1_fam = "fri_2_p1_time_fam";
+    final static String sat_2_p1_fam = "sat_2_p1_time_fam";
 
     final static String mon_2_p2_time_start = "mon_2_p2_time_start";
     final static String tue_2_p2_time_start = "tue_2_p2_time_start";
@@ -267,75 +267,75 @@ public class EditActivity extends AppCompatActivity {
     final static String fri_2_p2_fam = "fri_2_p2_time_fam";
     final static String sat_2_p2_fam = "sat_2_p2_time_fam";
 
-    final static String mon_2_p3_time_start = "mon_3_p3_time_start";
-    final static String tue_2_p3_time_start = "tue_3_p3_time_start";
-    final static String wed_2_p3_time_start = "wed_3_p3_time_start";
-    final static String thu_2_p3_time_start = "thu_3_p3_time_start";
-    final static String fri_2_p3_time_start = "fri_3_p3_time_start";
-    final static String sat_2_p3_time_start = "sat_3_p3_time_start";
+    final static String mon_2_p3_time_start = "mon_2_p3_time_start";
+    final static String tue_2_p3_time_start = "tue_2_p3_time_start";
+    final static String wed_2_p3_time_start = "wed_2_p3_time_start";
+    final static String thu_2_p3_time_start = "thu_2_p3_time_start";
+    final static String fri_2_p3_time_start = "fri_2_p3_time_start";
+    final static String sat_2_p3_time_start = "sat_2_p3_time_start";
 
-    final static String mon_2_p3_time_finish = "mon_3_p3_time_finish";
-    final static String tue_2_p3_time_finish = "tue_3_p3_time_finish";
-    final static String wed_2_p3_time_finish = "wed_3_p3_time_finish";
-    final static String thu_2_p3_time_finish = "thu_3_p3_time_finish";
-    final static String fri_2_p3_time_finish = "fri_3_p3_time_finish";
-    final static String sat_2_p3_time_finish = "sat_3_p3_time_finish";
+    final static String mon_2_p3_time_finish = "mon_2_p3_time_finish";
+    final static String tue_2_p3_time_finish = "tue_2_p3_time_finish";
+    final static String wed_2_p3_time_finish = "wed_2_p3_time_finish";
+    final static String thu_2_p3_time_finish = "thu_2_p3_time_finish";
+    final static String fri_2_p3_time_finish = "fri_2_p3_time_finish";
+    final static String sat_2_p3_time_finish = "sat_2_p3_time_finish";
 
-    final static String mon_2_p3_predmet = "mon_3_p3_predmet";
-    final static String tue_2_p3_predmet = "tue_3_p3_predmet";
-    final static String wed_2_p3_predmet = "wed_3_p3_predmet";
-    final static String thu_2_p3_predmet = "thu_3_p3_predmet";
-    final static String fri_2_p3_predmet = "fri_3_p3_predmet";
-    final static String sat_2_p3_predmet = "sat_3_p3_predmet";
+    final static String mon_2_p3_predmet = "mon_2_p3_predmet";
+    final static String tue_2_p3_predmet = "tue_2_p3_predmet";
+    final static String wed_2_p3_predmet = "wed_2_p3_predmet";
+    final static String thu_2_p3_predmet = "thu_2_p3_predmet";
+    final static String fri_2_p3_predmet = "fri_2_p3_predmet";
+    final static String sat_2_p3_predmet = "sat_2_p3_predmet";
 
-    final static String mon_2_p3_kab = "mon_3_p3_time_kab";
-    final static String tue_2_p3_kab = "tue_3_p3_time_kab";
-    final static String wed_2_p3_kab = "wed_3_p3_time_kab";
-    final static String thu_2_p3_kab = "thu_3_p3_time_kab";
-    final static String fri_2_p3_kab = "fri_3_p3_time_kab";
-    final static String sat_2_p3_kab = "sat_3_p3_time_kab";
+    final static String mon_2_p3_kab = "mon_2_p3_time_kab";
+    final static String tue_2_p3_kab = "tue_2_p3_time_kab";
+    final static String wed_2_p3_kab = "wed_2_p3_time_kab";
+    final static String thu_2_p3_kab = "thu_2_p3_time_kab";
+    final static String fri_2_p3_kab = "fri_2_p3_time_kab";
+    final static String sat_2_p3_kab = "sat_2_p3_time_kab";
 
-    final static String mon_2_p3_fam = "mon_3_p3_time_fam";
-    final static String tue_2_p3_fam = "tue_3_p3_time_fam";
-    final static String wed_2_p3_fam = "wed_3_p3_time_fam";
-    final static String thu_2_p3_fam = "thu_3_p3_time_fam";
-    final static String fri_2_p3_fam = "fri_3_p3_time_fam";
-    final static String sat_2_p3_fam = "sat_3_p3_time_fam";
+    final static String mon_2_p3_fam = "mon_2_p3_time_fam";
+    final static String tue_2_p3_fam = "tue_2_p3_time_fam";
+    final static String wed_2_p3_fam = "wed_2_p3_time_fam";
+    final static String thu_2_p3_fam = "thu_2_p3_time_fam";
+    final static String fri_2_p3_fam = "fri_2_p3_time_fam";
+    final static String sat_2_p3_fam = "sat_2_p3_time_fam";
 
-    final static String mon_2_p4_time_start = "mon_4_p4_time_start";
-    final static String tue_2_p4_time_start = "tue_4_p4_time_start";
-    final static String wed_2_p4_time_start = "wed_4_p4_time_start";
-    final static String thu_2_p4_time_start = "thu_4_p4_time_start";
-    final static String fri_2_p4_time_start = "fri_4_p4_time_start";
-    final static String sat_2_p4_time_start = "sat_4_p4_time_start";
+    final static String mon_2_p4_time_start = "mon_2_p4_time_start";
+    final static String tue_2_p4_time_start = "tue_2_p4_time_start";
+    final static String wed_2_p4_time_start = "wed_2_p4_time_start";
+    final static String thu_2_p4_time_start = "thu_2_p4_time_start";
+    final static String fri_2_p4_time_start = "fri_2_p4_time_start";
+    final static String sat_2_p4_time_start = "sat_2_p4_time_start";
 
-    final static String mon_2_p4_time_finish = "mon_4_p4_time_finish";
-    final static String tue_2_p4_time_finish = "tue_4_p4_time_finish";
-    final static String wed_2_p4_time_finish = "wed_4_p4_time_finish";
-    final static String thu_2_p4_time_finish = "thu_4_p4_time_finish";
-    final static String fri_2_p4_time_finish = "fri_4_p4_time_finish";
-    final static String sat_2_p4_time_finish = "sat_4_p4_time_finish";
+    final static String mon_2_p4_time_finish = "mon_2_p4_time_finish";
+    final static String tue_2_p4_time_finish = "tue_2_p4_time_finish";
+    final static String wed_2_p4_time_finish = "wed_2_p4_time_finish";
+    final static String thu_2_p4_time_finish = "thu_2_p4_time_finish";
+    final static String fri_2_p4_time_finish = "fri_2_p4_time_finish";
+    final static String sat_2_p4_time_finish = "sat_2_p4_time_finish";
 
-    final static String mon_2_p4_predmet = "mon_4_p4_predmet";
-    final static String tue_2_p4_predmet = "tue_4_p4_predmet";
-    final static String wed_2_p4_predmet = "wed_4_p4_predmet";
-    final static String thu_2_p4_predmet = "thu_4_p4_predmet";
-    final static String fri_2_p4_predmet = "fri_4_p4_predmet";
-    final static String sat_2_p4_predmet = "sat_4_p4_predmet";
+    final static String mon_2_p4_predmet = "mon_2_p4_predmet";
+    final static String tue_2_p4_predmet = "tue_2_p4_predmet";
+    final static String wed_2_p4_predmet = "wed_2_p4_predmet";
+    final static String thu_2_p4_predmet = "thu_2_p4_predmet";
+    final static String fri_2_p4_predmet = "fri_2_p4_predmet";
+    final static String sat_2_p4_predmet = "sat_2_p4_predmet";
 
-    final static String mon_2_p4_kab = "mon_4_p4_time_kab";
-    final static String tue_2_p4_kab = "tue_4_p4_time_kab";
-    final static String wed_2_p4_kab = "wed_4_p4_time_kab";
-    final static String thu_2_p4_kab = "thu_4_p4_time_kab";
-    final static String fri_2_p4_kab = "fri_4_p4_time_kab";
-    final static String sat_2_p4_kab = "sat_4_p4_time_kab";
+    final static String mon_2_p4_kab = "mon_2_p4_time_kab";
+    final static String tue_2_p4_kab = "tue_2_p4_time_kab";
+    final static String wed_2_p4_kab = "wed_2_p4_time_kab";
+    final static String thu_2_p4_kab = "thu_2_p4_time_kab";
+    final static String fri_2_p4_kab = "fri_2_p4_time_kab";
+    final static String sat_2_p4_kab = "sat_2_p4_time_kab";
 
-    final static String mon_2_p4_fam = "mon_4_p4_time_fam";
-    final static String tue_2_p4_fam = "tue_4_p4_time_fam";
-    final static String wed_2_p4_fam = "wed_4_p4_time_fam";
-    final static String thu_2_p4_fam = "thu_4_p4_time_fam";
-    final static String fri_2_p4_fam = "fri_4_p4_time_fam";
-    final static String sat_2_p4_fam = "sat_4_p4_time_fam";
+    final static String mon_2_p4_fam = "mon_2_p4_time_fam";
+    final static String tue_2_p4_fam = "tue_2_p4_time_fam";
+    final static String wed_2_p4_fam = "wed_2_p4_time_fam";
+    final static String thu_2_p4_fam = "thu_2_p4_time_fam";
+    final static String fri_2_p4_fam = "fri_2_p4_time_fam";
+    final static String sat_2_p4_fam = "sat_2_p4_time_fam";
 
 
     @Override
@@ -424,26 +424,31 @@ public class EditActivity extends AppCompatActivity {
                     case R.id.tue:
                         mDay.setText(R.string.tue1);
                         a = 2;
+                        printTue1();
                         break;
 
                     case R.id.wed:
                         mDay.setText(R.string.wed1);
                         a = 3;
+                        printWed1();
                         break;
 
                     case R.id.thu:
                         mDay.setText(R.string.thu1);
                         a = 4;
+                        printThu1();
                         break;
 
                     case R.id.fri:
                         mDay.setText(R.string.fri1);
                         a = 5;
+                        printFri1();
                         break;
 
                     case R.id.sat:
                         mDay.setText(R.string.sat1);
                         a = 6;
+                        printSat1();
                         break;
 
                     case R.id.save:
@@ -496,32 +501,37 @@ public class EditActivity extends AppCompatActivity {
                     case R.id.mon:
                         mDay.setText(R.string.mon2);
                         a = 1;
-                        printMon1();
+                        printMon2();
                         break;
 
                     case R.id.tue:
                         mDay.setText(R.string.tue2);
                         a = 2;
+                        printTue2();
                         break;
 
                     case R.id.wed:
                         mDay.setText(R.string.wed2);
                         a = 3;
+                        printWed2();
                         break;
 
                     case R.id.thu:
                         mDay.setText(R.string.thu2);
                         a = 4;
+                        printThu2();
                         break;
 
                     case R.id.fri:
                         mDay.setText(R.string.fri2);
                         a = 5;
+                        printFri2();
                         break;
 
                     case R.id.sat:
                         mDay.setText(R.string.sat2);
                         a = 6;
+                        printSat2();
                         break;
 
                     case R.id.save:
@@ -630,6 +640,294 @@ public class EditActivity extends AppCompatActivity {
         p4_predmet.setText(loadText(mon_1_p4_predmet));
         p4_kab.setText(loadText(mon_1_p4_kab));
         p4_fam.setText(loadText(mon_1_p4_fam));
+
+    }
+    private void printTue1() {
+        p1_time_start.setText(loadText(tue_1_p1_time_start));
+        p1_time_finish.setText(loadText(tue_1_p1_time_finish));
+        p1_predmet.setText(loadText(tue_1_p1_predmet));
+        p1_kab.setText(loadText(tue_1_p1_kab));
+        p1_fam.setText(loadText(tue_1_p1_fam));
+
+        p2_time_start.setText(loadText(tue_1_p2_time_start));
+        p2_time_finish.setText(loadText(tue_1_p2_time_finish));
+        p2_predmet.setText(loadText(tue_1_p2_predmet));
+        p2_kab.setText(loadText(tue_1_p2_kab));
+        p2_fam.setText(loadText(tue_1_p2_fam));
+
+        p3_time_start.setText(loadText(tue_1_p3_time_start));
+        p3_time_finish.setText(loadText(tue_1_p3_time_finish));
+        p3_predmet.setText(loadText(tue_1_p3_predmet));
+        p3_kab.setText(loadText(tue_1_p3_kab));
+        p3_fam.setText(loadText(tue_1_p3_fam));
+
+        p4_time_start.setText(loadText(tue_1_p4_time_start));
+        p4_time_finish.setText(loadText(tue_1_p4_time_finish));
+        p4_predmet.setText(loadText(tue_1_p4_predmet));
+        p4_kab.setText(loadText(tue_1_p4_kab));
+        p4_fam.setText(loadText(tue_1_p4_fam));
+
+    }
+    private void printWed1() {
+        p1_time_start.setText(loadText(wed_1_p1_time_start));
+        p1_time_finish.setText(loadText(wed_1_p1_time_finish));
+        p1_predmet.setText(loadText(wed_1_p1_predmet));
+        p1_kab.setText(loadText(wed_1_p1_kab));
+        p1_fam.setText(loadText(wed_1_p1_fam));
+
+        p2_time_start.setText(loadText(wed_1_p2_time_start));
+        p2_time_finish.setText(loadText(wed_1_p2_time_finish));
+        p2_predmet.setText(loadText(wed_1_p2_predmet));
+        p2_kab.setText(loadText(wed_1_p2_kab));
+        p2_fam.setText(loadText(wed_1_p2_fam));
+
+        p3_time_start.setText(loadText(wed_1_p3_time_start));
+        p3_time_finish.setText(loadText(wed_1_p3_time_finish));
+        p3_predmet.setText(loadText(wed_1_p3_predmet));
+        p3_kab.setText(loadText(wed_1_p3_kab));
+        p3_fam.setText(loadText(wed_1_p3_fam));
+
+        p4_time_start.setText(loadText(wed_1_p4_time_start));
+        p4_time_finish.setText(loadText(wed_1_p4_time_finish));
+        p4_predmet.setText(loadText(wed_1_p4_predmet));
+        p4_kab.setText(loadText(wed_1_p4_kab));
+        p4_fam.setText(loadText(wed_1_p4_fam));
+
+    }
+    private void printThu1() {
+        p1_time_start.setText(loadText(thu_1_p1_time_start));
+        p1_time_finish.setText(loadText(thu_1_p1_time_finish));
+        p1_predmet.setText(loadText(thu_1_p1_predmet));
+        p1_kab.setText(loadText(thu_1_p1_kab));
+        p1_fam.setText(loadText(thu_1_p1_fam));
+
+        p2_time_start.setText(loadText(thu_1_p2_time_start));
+        p2_time_finish.setText(loadText(thu_1_p2_time_finish));
+        p2_predmet.setText(loadText(thu_1_p2_predmet));
+        p2_kab.setText(loadText(thu_1_p2_kab));
+        p2_fam.setText(loadText(thu_1_p2_fam));
+
+        p3_time_start.setText(loadText(thu_1_p3_time_start));
+        p3_time_finish.setText(loadText(thu_1_p3_time_finish));
+        p3_predmet.setText(loadText(thu_1_p3_predmet));
+        p3_kab.setText(loadText(thu_1_p3_kab));
+        p3_fam.setText(loadText(thu_1_p3_fam));
+
+        p4_time_start.setText(loadText(thu_1_p4_time_start));
+        p4_time_finish.setText(loadText(thu_1_p4_time_finish));
+        p4_predmet.setText(loadText(thu_1_p4_predmet));
+        p4_kab.setText(loadText(thu_1_p4_kab));
+        p4_fam.setText(loadText(thu_1_p4_fam));
+
+    }
+    private void printFri1() {
+        p1_time_start.setText(loadText(fri_1_p1_time_start));
+        p1_time_finish.setText(loadText(fri_1_p1_time_finish));
+        p1_predmet.setText(loadText(fri_1_p1_predmet));
+        p1_kab.setText(loadText(fri_1_p1_kab));
+        p1_fam.setText(loadText(fri_1_p1_fam));
+
+        p2_time_start.setText(loadText(fri_1_p2_time_start));
+        p2_time_finish.setText(loadText(fri_1_p2_time_finish));
+        p2_predmet.setText(loadText(fri_1_p2_predmet));
+        p2_kab.setText(loadText(fri_1_p2_kab));
+        p2_fam.setText(loadText(fri_1_p2_fam));
+
+        p3_time_start.setText(loadText(fri_1_p3_time_start));
+        p3_time_finish.setText(loadText(fri_1_p3_time_finish));
+        p3_predmet.setText(loadText(fri_1_p3_predmet));
+        p3_kab.setText(loadText(fri_1_p3_kab));
+        p3_fam.setText(loadText(fri_1_p3_fam));
+
+        p4_time_start.setText(loadText(fri_1_p4_time_start));
+        p4_time_finish.setText(loadText(fri_1_p4_time_finish));
+        p4_predmet.setText(loadText(fri_1_p4_predmet));
+        p4_kab.setText(loadText(fri_1_p4_kab));
+        p4_fam.setText(loadText(fri_1_p4_fam));
+
+    }
+    private void printSat1() {
+        p1_time_start.setText(loadText(sat_1_p1_time_start));
+        p1_time_finish.setText(loadText(sat_1_p1_time_finish));
+        p1_predmet.setText(loadText(sat_1_p1_predmet));
+        p1_kab.setText(loadText(sat_1_p1_kab));
+        p1_fam.setText(loadText(sat_1_p1_fam));
+
+        p2_time_start.setText(loadText(sat_1_p2_time_start));
+        p2_time_finish.setText(loadText(sat_1_p2_time_finish));
+        p2_predmet.setText(loadText(sat_1_p2_predmet));
+        p2_kab.setText(loadText(sat_1_p2_kab));
+        p2_fam.setText(loadText(sat_1_p2_fam));
+
+        p3_time_start.setText(loadText(sat_1_p3_time_start));
+        p3_time_finish.setText(loadText(sat_1_p3_time_finish));
+        p3_predmet.setText(loadText(sat_1_p3_predmet));
+        p3_kab.setText(loadText(sat_1_p3_kab));
+        p3_fam.setText(loadText(sat_1_p3_fam));
+
+        p4_time_start.setText(loadText(sat_1_p4_time_start));
+        p4_time_finish.setText(loadText(sat_1_p4_time_finish));
+        p4_predmet.setText(loadText(sat_1_p4_predmet));
+        p4_kab.setText(loadText(sat_1_p4_kab));
+        p4_fam.setText(loadText(sat_1_p4_fam));
+
+    }
+
+
+    private void printMon2() {
+        p1_time_start.setText(loadText(mon_2_p1_time_start));
+        p1_time_finish.setText(loadText(mon_2_p1_time_finish));
+        p1_predmet.setText(loadText(mon_2_p1_predmet));
+        p1_kab.setText(loadText(mon_2_p1_kab));
+        p1_fam.setText(loadText(mon_2_p1_fam));
+
+        p2_time_start.setText(loadText(mon_2_p2_time_start));
+        p2_time_finish.setText(loadText(mon_2_p2_time_finish));
+        p2_predmet.setText(loadText(mon_2_p2_predmet));
+        p2_kab.setText(loadText(mon_2_p2_kab));
+        p2_fam.setText(loadText(mon_2_p2_fam));
+
+        p3_time_start.setText(loadText(mon_2_p3_time_start));
+        p3_time_finish.setText(loadText(mon_2_p3_time_finish));
+        p3_predmet.setText(loadText(mon_2_p3_predmet));
+        p3_kab.setText(loadText(mon_2_p3_kab));
+        p3_fam.setText(loadText(mon_2_p3_fam));
+
+        p4_time_start.setText(loadText(mon_2_p4_time_start));
+        p4_time_finish.setText(loadText(mon_2_p4_time_finish));
+        p4_predmet.setText(loadText(mon_2_p4_predmet));
+        p4_kab.setText(loadText(mon_2_p4_kab));
+        p4_fam.setText(loadText(mon_2_p4_fam));
+
+    }
+    private void printTue2() {
+        p1_time_start.setText(loadText(tue_2_p1_time_start));
+        p1_time_finish.setText(loadText(tue_2_p1_time_finish));
+        p1_predmet.setText(loadText(tue_2_p1_predmet));
+        p1_kab.setText(loadText(tue_2_p1_kab));
+        p1_fam.setText(loadText(tue_2_p1_fam));
+
+        p2_time_start.setText(loadText(tue_2_p2_time_start));
+        p2_time_finish.setText(loadText(tue_2_p2_time_finish));
+        p2_predmet.setText(loadText(tue_2_p2_predmet));
+        p2_kab.setText(loadText(tue_2_p2_kab));
+        p2_fam.setText(loadText(tue_2_p2_fam));
+
+        p3_time_start.setText(loadText(tue_2_p3_time_start));
+        p3_time_finish.setText(loadText(tue_2_p3_time_finish));
+        p3_predmet.setText(loadText(tue_2_p3_predmet));
+        p3_kab.setText(loadText(tue_2_p3_kab));
+        p3_fam.setText(loadText(tue_2_p3_fam));
+
+        p4_time_start.setText(loadText(tue_2_p4_time_start));
+        p4_time_finish.setText(loadText(tue_2_p4_time_finish));
+        p4_predmet.setText(loadText(tue_2_p4_predmet));
+        p4_kab.setText(loadText(tue_2_p4_kab));
+        p4_fam.setText(loadText(tue_2_p4_fam));
+
+    }
+    private void printWed2() {
+        p1_time_start.setText(loadText(wed_2_p1_time_start));
+        p1_time_finish.setText(loadText(wed_2_p1_time_finish));
+        p1_predmet.setText(loadText(wed_2_p1_predmet));
+        p1_kab.setText(loadText(wed_2_p1_kab));
+        p1_fam.setText(loadText(wed_2_p1_fam));
+
+        p2_time_start.setText(loadText(wed_2_p2_time_start));
+        p2_time_finish.setText(loadText(wed_2_p2_time_finish));
+        p2_predmet.setText(loadText(wed_2_p2_predmet));
+        p2_kab.setText(loadText(wed_2_p2_kab));
+        p2_fam.setText(loadText(wed_2_p2_fam));
+
+        p3_time_start.setText(loadText(wed_2_p3_time_start));
+        p3_time_finish.setText(loadText(wed_2_p3_time_finish));
+        p3_predmet.setText(loadText(wed_2_p3_predmet));
+        p3_kab.setText(loadText(wed_2_p3_kab));
+        p3_fam.setText(loadText(wed_2_p3_fam));
+
+        p4_time_start.setText(loadText(wed_2_p4_time_start));
+        p4_time_finish.setText(loadText(wed_2_p4_time_finish));
+        p4_predmet.setText(loadText(wed_2_p4_predmet));
+        p4_kab.setText(loadText(wed_2_p4_kab));
+        p4_fam.setText(loadText(wed_2_p4_fam));
+
+    }
+    private void printThu2() {
+        p1_time_start.setText(loadText(thu_2_p1_time_start));
+        p1_time_finish.setText(loadText(thu_2_p1_time_finish));
+        p1_predmet.setText(loadText(thu_2_p1_predmet));
+        p1_kab.setText(loadText(thu_2_p1_kab));
+        p1_fam.setText(loadText(thu_2_p1_fam));
+
+        p2_time_start.setText(loadText(thu_2_p2_time_start));
+        p2_time_finish.setText(loadText(thu_2_p2_time_finish));
+        p2_predmet.setText(loadText(thu_2_p2_predmet));
+        p2_kab.setText(loadText(thu_2_p2_kab));
+        p2_fam.setText(loadText(thu_2_p2_fam));
+
+        p3_time_start.setText(loadText(thu_2_p3_time_start));
+        p3_time_finish.setText(loadText(thu_2_p3_time_finish));
+        p3_predmet.setText(loadText(thu_2_p3_predmet));
+        p3_kab.setText(loadText(thu_2_p3_kab));
+        p3_fam.setText(loadText(thu_2_p3_fam));
+
+        p4_time_start.setText(loadText(thu_2_p4_time_start));
+        p4_time_finish.setText(loadText(thu_2_p4_time_finish));
+        p4_predmet.setText(loadText(thu_2_p4_predmet));
+        p4_kab.setText(loadText(thu_2_p4_kab));
+        p4_fam.setText(loadText(thu_2_p4_fam));
+
+    }
+    private void printFri2() {
+        p1_time_start.setText(loadText(fri_2_p1_time_start));
+        p1_time_finish.setText(loadText(fri_2_p1_time_finish));
+        p1_predmet.setText(loadText(fri_2_p1_predmet));
+        p1_kab.setText(loadText(fri_2_p1_kab));
+        p1_fam.setText(loadText(fri_2_p1_fam));
+
+        p2_time_start.setText(loadText(fri_2_p2_time_start));
+        p2_time_finish.setText(loadText(fri_2_p2_time_finish));
+        p2_predmet.setText(loadText(fri_2_p2_predmet));
+        p2_kab.setText(loadText(fri_2_p2_kab));
+        p2_fam.setText(loadText(fri_2_p2_fam));
+
+        p3_time_start.setText(loadText(fri_2_p3_time_start));
+        p3_time_finish.setText(loadText(fri_2_p3_time_finish));
+        p3_predmet.setText(loadText(fri_2_p3_predmet));
+        p3_kab.setText(loadText(fri_2_p3_kab));
+        p3_fam.setText(loadText(fri_2_p3_fam));
+
+        p4_time_start.setText(loadText(fri_2_p4_time_start));
+        p4_time_finish.setText(loadText(fri_2_p4_time_finish));
+        p4_predmet.setText(loadText(fri_2_p4_predmet));
+        p4_kab.setText(loadText(fri_2_p4_kab));
+        p4_fam.setText(loadText(fri_2_p4_fam));
+
+    }
+    private void printSat2() {
+        p1_time_start.setText(loadText(sat_2_p1_time_start));
+        p1_time_finish.setText(loadText(sat_2_p1_time_finish));
+        p1_predmet.setText(loadText(sat_2_p1_predmet));
+        p1_kab.setText(loadText(sat_2_p1_kab));
+        p1_fam.setText(loadText(sat_2_p1_fam));
+
+        p2_time_start.setText(loadText(sat_2_p2_time_start));
+        p2_time_finish.setText(loadText(sat_2_p2_time_finish));
+        p2_predmet.setText(loadText(sat_2_p2_predmet));
+        p2_kab.setText(loadText(sat_2_p2_kab));
+        p2_fam.setText(loadText(sat_2_p2_fam));
+
+        p3_time_start.setText(loadText(sat_2_p3_time_start));
+        p3_time_finish.setText(loadText(sat_2_p3_time_finish));
+        p3_predmet.setText(loadText(sat_2_p3_predmet));
+        p3_kab.setText(loadText(sat_2_p3_kab));
+        p3_fam.setText(loadText(sat_2_p3_fam));
+
+        p4_time_start.setText(loadText(sat_2_p4_time_start));
+        p4_time_finish.setText(loadText(sat_2_p4_time_finish));
+        p4_predmet.setText(loadText(sat_2_p4_predmet));
+        p4_kab.setText(loadText(sat_2_p4_kab));
+        p4_fam.setText(loadText(sat_2_p4_fam));
 
     }
 
