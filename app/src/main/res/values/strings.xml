@@ -57,19 +57,19 @@
     <string name="chetn2">Четная - числитель(1)</string>
     <string name="nechetn2">Не четная - знаменатель(2)</string>
 
-    <string name="mon1">Понедельник(1)</string>
-    <string name="tue1">Вторник(1)</string>
-    <string name="wed1">Среда(1)</string>
-    <string name="thu1">Четверг(1)</string>
-    <string name="fri1">Пятница(1)</string>
-    <string name="sat1">Суббота(1)</string>
+    <string name="mon1">ПОНЕДЕЛЬНИК (1)</string>
+    <string name="tue1">ВТОРНИК (1)</string>
+    <string name="wed1">СРЕДА (1)</string>
+    <string name="thu1">ЧЕТВЕРГ (1)</string>
+    <string name="fri1">ПЯТНИЦА (1)</string>
+    <string name="sat1">СУББОТА (1)</string>
 
-    <string name="mon2">Понедельник(2)</string>
-    <string name="tue2">Вторник(2)</string>
-    <string name="wed2">Среда(2)</string>
-    <string name="thu2">Четверг(2)</string>
-    <string name="fri2">Пятница(2)</string>
-    <string name="sat2">Суббота(2)</string>
+    <string name="mon2">ПОНЕДЕЛЬНИК (2)</string>
+    <string name="tue2">ВТОРНИК (2)</string>
+    <string name="wed2">СРЕДА (2)</string>
+    <string name="thu2">ЧЕТВЕРГ (2)</string>
+    <string name="fri2">ПЯТНИЦА (2)</string>
+    <string name="sat2">СУББОТА (2)</string>
 
 
 

@@ -55,19 +55,19 @@ public class EditActivity extends AppCompatActivity {
 
     static SharedPreferences sPref;
 
-    String mon1 = "Понедельник(1)";
-    String tue1 = "Вторник(1)";
-    String wed1 = "Среда(1)";
-    String thu1 = "Четверг(1)";
-    String fri1 = "Пятница(1)";
-    String sat1 = "Суббота(1)";
+    String mon1 = "ПОНЕДЕЛЬНИК (1)";
+    String tue1 = "ВТОРНИК (1)";
+    String wed1 = "СРЕДА (1)";
+    String thu1 = "ЧЕТВЕРГ (1)";
+    String fri1 = "ПЯТНИЦА (1)";
+    String sat1 = "СУББОТА (1)";
 
-    String mon2 = "Понедельник(2)";
-    String tue2 = "Вторник(2)";
-    String wed2 = "Среда(2)";
-    String thu2 = "Четверг(2)";
-    String fri2 = "Пятница(2)";
-    String sat2 = "Суббота(2)";
+    String mon2 = "ПОНЕДЕЛЬНИК (2)";
+    String tue2 = "ВТОРНИК (2)";
+    String wed2 = "СРЕДА (2)";
+    String thu2 = "ЧЕТВЕРГ (2)";
+    String fri2 = "ПЯТНИЦА (2)";
+    String sat2 = "СУББОТА (2)";
 
     final static String mon_1_p1_time_start = "mon_1_p1_time_start";
     final static String tue_1_p1_time_start = "tue_1_p1_time_start";
