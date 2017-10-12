@@ -28,26 +28,26 @@ public class EditActivity extends AppCompatActivity {
     Button mFr;
     Button mSa;
 
-    static EditText p1_predmet;
-    static EditText p1_fam;
-    static EditText p1_kab;
-    static EditText p1_time_start;
-    static EditText p1_time_finish;
-    static EditText p2_predmet;
-    static EditText p2_fam;
-    static EditText p2_kab;
-    static EditText p2_time_start;
-    static EditText p2_time_finish;
-    static EditText p3_predmet;
-    static EditText p3_fam;
-    static EditText p3_kab;
-    static EditText p3_time_start;
-    static EditText p3_time_finish;
-    static EditText p4_predmet;
-    static EditText p4_fam;
-    static EditText p4_kab;
-    static EditText p4_time_start;
-    static EditText p4_time_finish;
+    EditText p1_predmet;
+    EditText p1_fam;
+    EditText p1_kab;
+    EditText p1_time_start;
+    EditText p1_time_finish;
+    EditText p2_predmet;
+    EditText p2_fam;
+    EditText p2_kab;
+    EditText p2_time_start;
+    EditText p2_time_finish;
+    EditText p3_predmet;
+    EditText p3_fam;
+    EditText p3_kab;
+    EditText p3_time_start;
+    EditText p3_time_finish;
+    EditText p4_predmet;
+    EditText p4_fam;
+    EditText p4_kab;
+    EditText p4_time_start;
+    EditText p4_time_finish;
 
     CheckBox mChkBox; //Чекбокс какая неделя
     TextView mDay;
@@ -613,16 +613,15 @@ public class EditActivity extends AppCompatActivity {
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(name, mesto); //SAVED_TEXT - name, p1_fam.getText().toString() - mesto
-//        ed.apply();
-        ed.commit();
+        ed.apply();
+//        ed.commit();
 //        Toast.makeText(this, sPref.getString(name, ""), Toast.LENGTH_SHORT).show();
 
     }
 
     String loadText(String weekDay) {
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
-        String text = sPref.getString(weekDay, "");
-        return text;
+        return sPref.getString(weekDay, "");
         // String savedText = sPref.getString(SAVED_TEXT, "");
         //Toast.makeText(this, "a tut text" + savedText, Toast.LENGTH_SHORT).show();
     }

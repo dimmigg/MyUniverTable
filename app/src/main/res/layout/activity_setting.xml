@@ -5,8 +5,7 @@
 
     <CheckBoxPreference
         android:key="cheks"
-        android:title="@string/chkBoxSetting" >
-    </CheckBoxPreference>
+        android:title="@string/chkBoxSetting" />
 
 
 

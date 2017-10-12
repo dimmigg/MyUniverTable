@@ -198,7 +198,6 @@ public class MainActivity extends AppCompatActivity {
     static WeekDay fri_2 = new WeekDay();
     static WeekDay sat_2 = new WeekDay();
 
-    static final String SAVED_TEXT="SAVED_TEXT";
     static SharedPreferences sPref;
     BottomNavigationView navigation;
 
@@ -243,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initializeNavigationDrawer(toolbar);
 
         sp = PreferenceManager.getDefaultSharedPreferences(this);
@@ -476,20 +475,42 @@ public class MainActivity extends AppCompatActivity {
     //при востановлениии изменяет размер
     protected void onResume() {
         super.onResume();
-        int TimeTextSize = Integer.parseInt(sp.getString("list", "1"));
-        if (TimeTextSize != 1) {
-//            mTextMessage.setTextSize(TimeTextSize);
-        } else {
-//            mTextMessage.setTextSize(14);
-        }
+        loadSize();
         navigation.setSelectedItemId(R.id.week1);
         loadWeek1();
         print_all_1();
 //        navigation.setSelectedItemId(R.id.navigation_home);
     }
 
+    private void loadSize() {
+        int timeSize = Integer.parseInt(sp.getString("timeSize", "1"));
+        int predmetSize = Integer.parseInt(sp.getString("predmetSize", "1"));
+        int kabSize = Integer.parseInt(sp.getString("kabSize", "1"));
+        int famSize = Integer.parseInt(sp.getString("famSize", "1"));
+        if (timeSize != 1) {
+            loadTimeSize(timeSize);
+        } else {
+            loadTimeSize(12);
+        }
 
+        if (predmetSize != 1) {
+            loadPredmetSize(predmetSize);
+        } else {
+            loadPredmetSize(14);
+        }
 
+        if (kabSize != 1) {
+            loadKabSize(kabSize);
+        } else {
+            loadKabSize(12);
+        }
+
+        if (famSize != 1) {
+            loadFamSize(famSize);
+        } else {
+            loadFamSize(13);
+        }
+    }
 
 
     void print_all_1(){
@@ -749,9 +770,7 @@ public class MainActivity extends AppCompatActivity {
 
     String loadText(String name) {
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
-        String mesto = sPref.getString(name, "");
-//        Toast.makeText(this, "in method - " + mesto, Toast.LENGTH_SHORT).show();
-        return mesto;
+        return sPref.getString(name, "");
 //        mon_1.fam1 = SAVED_TEXT;
        // Toast.makeText(this, "nu a zdes"+ sPref.getString(SAVED_TEXT, ""), Toast.LENGTH_SHORT).show();
     }
@@ -1081,7 +1100,147 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
 
+    void loadTimeSize(int size){
+        mTextMonStartTime1.setTextSize(size);
+        mTextMonStartTime2.setTextSize(size);
+        mTextMonStartTime3.setTextSize(size);
+        mTextMonStartTime4.setTextSize(size);
+        mTextMonFinishTime1.setTextSize(size);
+        mTextMonFinishTime2.setTextSize(size);
+        mTextMonFinishTime3.setTextSize(size);
+        mTextMonFinishTime4.setTextSize(size);
 
+        mTextTueStartTime1.setTextSize(size);
+        mTextTueStartTime2.setTextSize(size);
+        mTextTueStartTime3.setTextSize(size);
+        mTextTueStartTime4.setTextSize(size);
+        mTextTueFinishTime1.setTextSize(size);
+        mTextTueFinishTime2.setTextSize(size);
+        mTextTueFinishTime3.setTextSize(size);
+        mTextTueFinishTime4.setTextSize(size);
+
+        mTextWedStartTime1.setTextSize(size);
+        mTextWedStartTime2.setTextSize(size);
+        mTextWedStartTime3.setTextSize(size);
+        mTextWedStartTime4.setTextSize(size);
+        mTextWedFinishTime1.setTextSize(size);
+        mTextWedFinishTime2.setTextSize(size);
+        mTextWedFinishTime3.setTextSize(size);
+        mTextWedFinishTime4.setTextSize(size);
+
+        mTextThuStartTime1.setTextSize(size);
+        mTextThuStartTime2.setTextSize(size);
+        mTextThuStartTime3.setTextSize(size);
+        mTextThuStartTime4.setTextSize(size);
+        mTextThuFinishTime1.setTextSize(size);
+        mTextThuFinishTime2.setTextSize(size);
+        mTextThuFinishTime3.setTextSize(size);
+        mTextThuFinishTime4.setTextSize(size);
+
+        mTextFriStartTime1.setTextSize(size);
+        mTextFriStartTime2.setTextSize(size);
+        mTextFriStartTime3.setTextSize(size);
+        mTextFriStartTime4.setTextSize(size);
+        mTextFriFinishTime1.setTextSize(size);
+        mTextFriFinishTime2.setTextSize(size);
+        mTextFriFinishTime3.setTextSize(size);
+        mTextFriFinishTime4.setTextSize(size);
+
+        mTextSatStartTime1.setTextSize(size);
+        mTextSatStartTime2.setTextSize(size);
+        mTextSatStartTime3.setTextSize(size);
+        mTextSatStartTime4.setTextSize(size);
+        mTextSatFinishTime1.setTextSize(size);
+        mTextSatFinishTime2.setTextSize(size);
+        mTextSatFinishTime3.setTextSize(size);
+        mTextSatFinishTime4.setTextSize(size);
+
+    }
+
+
+    private void loadPredmetSize(int size) {
+        mTextMonPredmet1.setTextSize(size);
+        mTextMonPredmet2.setTextSize(size);
+        mTextMonPredmet3.setTextSize(size);
+        mTextMonPredmet4.setTextSize(size);
+        mTextTuePredmet1.setTextSize(size);
+        mTextTuePredmet2.setTextSize(size);
+        mTextTuePredmet3.setTextSize(size);
+        mTextTuePredmet4.setTextSize(size);
+        mTextWedPredmet1.setTextSize(size);
+        mTextWedPredmet2.setTextSize(size);
+        mTextWedPredmet3.setTextSize(size);
+        mTextWedPredmet4.setTextSize(size);
+        mTextThuPredmet1.setTextSize(size);
+        mTextThuPredmet2.setTextSize(size);
+        mTextThuPredmet3.setTextSize(size);
+        mTextThuPredmet4.setTextSize(size);
+        mTextFriPredmet1.setTextSize(size);
+        mTextFriPredmet2.setTextSize(size);
+        mTextFriPredmet3.setTextSize(size);
+        mTextFriPredmet4.setTextSize(size);
+        mTextSatPredmet1.setTextSize(size);
+        mTextSatPredmet2.setTextSize(size);
+        mTextSatPredmet3.setTextSize(size);
+        mTextSatPredmet4.setTextSize(size);
+
+    }
+
+    private void loadKabSize(int size) {
+        mTextMonKab1.setTextSize(size);
+        mTextMonKab2.setTextSize(size);
+        mTextMonKab3.setTextSize(size);
+        mTextMonKab4.setTextSize(size);
+        mTextTueKab1.setTextSize(size);
+        mTextTueKab2.setTextSize(size);
+        mTextTueKab3.setTextSize(size);
+        mTextTueKab4.setTextSize(size);
+        mTextWedKab1.setTextSize(size);
+        mTextWedKab2.setTextSize(size);
+        mTextWedKab3.setTextSize(size);
+        mTextWedKab4.setTextSize(size);
+        mTextThuKab1.setTextSize(size);
+        mTextThuKab2.setTextSize(size);
+        mTextThuKab3.setTextSize(size);
+        mTextThuKab4.setTextSize(size);
+        mTextFriKab1.setTextSize(size);
+        mTextFriKab2.setTextSize(size);
+        mTextFriKab3.setTextSize(size);
+        mTextFriKab4.setTextSize(size);
+        mTextSatKab1.setTextSize(size);
+        mTextSatKab2.setTextSize(size);
+        mTextSatKab3.setTextSize(size);
+        mTextSatKab4.setTextSize(size);
+
+    }
+
+    private void loadFamSize(int size) {
+        mTextMonFam1.setTextSize(size);
+        mTextMonFam2.setTextSize(size);
+        mTextMonFam3.setTextSize(size);
+        mTextMonFam4.setTextSize(size);
+        mTextTueFam1.setTextSize(size);
+        mTextTueFam2.setTextSize(size);
+        mTextTueFam3.setTextSize(size);
+        mTextTueFam4.setTextSize(size);
+        mTextWedFam1.setTextSize(size);
+        mTextWedFam2.setTextSize(size);
+        mTextWedFam3.setTextSize(size);
+        mTextWedFam4.setTextSize(size);
+        mTextThuFam1.setTextSize(size);
+        mTextThuFam2.setTextSize(size);
+        mTextThuFam3.setTextSize(size);
+        mTextThuFam4.setTextSize(size);
+        mTextFriFam1.setTextSize(size);
+        mTextFriFam2.setTextSize(size);
+        mTextFriFam3.setTextSize(size);
+        mTextFriFam4.setTextSize(size);
+        mTextSatFam1.setTextSize(size);
+        mTextSatFam2.setTextSize(size);
+        mTextSatFam3.setTextSize(size);
+        mTextSatFam4.setTextSize(size);
+
+    }
 
 
 }
