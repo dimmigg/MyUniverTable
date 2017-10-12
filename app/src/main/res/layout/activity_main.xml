@@ -22,10 +22,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:elevation="24dp">
+
         <LinearLayout
             style="@style/Week"
             android:layout_height="match_parent"
             android:layout_weight="0">
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -43,8 +45,7 @@
 
                                 <TextView
                                     android:id="@+id/mon"
-                                    style="@style/Text.WeekName"
-                                    android:text="@string/app_name" />
+                                    style="@style/Text.WeekName" />
 
                             </TableRow>
 
@@ -63,18 +64,15 @@
                                         <TextView
 
                                             android:id="@+id/mon_p1_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p1_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="222222222222222222222222222222222222222222" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/mon_p1_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
 
                                     </TableRow>
 
@@ -82,106 +80,89 @@
 
                                         <TextView
                                             android:id="@+id/mon_p1_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="1111111111111111111111111" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p1_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/mon_p2_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p2_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/mon_p2_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/mon_p2_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p2_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/mon_p3_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p3_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/mon_p3_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/mon_p3_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p3_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/mon_p4_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p4_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/mon_p4_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/mon_p4_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/mon_p4_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
 
                                     </TableRow>
 
@@ -197,8 +178,7 @@
 
                                 <TextView
                                     android:id="@+id/tue"
-                                    style="@style/Text.WeekName"
-                                    android:text="@string/app_name" />
+                                    style="@style/Text.WeekName" />
 
                             </TableRow>
 
@@ -217,18 +197,15 @@
                                         <TextView
 
                                             android:id="@+id/tue_p1_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p1_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="45" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/tue_p1_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
 
                                     </TableRow>
 
@@ -236,106 +213,89 @@
 
                                         <TextView
                                             android:id="@+id/tue_p1_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="1111111111111111111111111" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p1_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/tue_p2_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p2_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/tue_p2_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/tue_p2_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p2_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/tue_p3_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p3_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/tue_p3_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/tue_p3_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p3_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/tue_p4_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p4_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/tue_p4_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/tue_p4_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/tue_p4_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
 
                                     </TableRow>
 
@@ -355,8 +315,7 @@
 
                                 <TextView
                                     android:id="@+id/wed"
-                                    style="@style/Text.WeekName"
-                                    android:text="@string/app_name" />
+                                    style="@style/Text.WeekName" />
 
                             </TableRow>
 
@@ -375,18 +334,15 @@
                                         <TextView
 
                                             android:id="@+id/wed_p1_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p1_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="222222222222222222222222222222222222222222" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/wed_p1_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
 
                                     </TableRow>
 
@@ -394,106 +350,89 @@
 
                                         <TextView
                                             android:id="@+id/wed_p1_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="1111111111111111111111111" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p1_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/wed_p2_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p2_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/wed_p2_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/wed_p2_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p2_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/wed_p3_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p3_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/wed_p3_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/wed_p3_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p3_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/wed_p4_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p4_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/wed_p4_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/wed_p4_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/wed_p4_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
 
                                     </TableRow>
 
@@ -509,8 +448,7 @@
 
                                 <TextView
                                     android:id="@+id/thu"
-                                    style="@style/Text.WeekName"
-                                    android:text="@string/app_name" />
+                                    style="@style/Text.WeekName" />
 
                             </TableRow>
 
@@ -529,18 +467,15 @@
                                         <TextView
 
                                             android:id="@+id/thu_p1_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p1_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="222222222222222222222222222222222222222222" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/thu_p1_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
 
                                     </TableRow>
 
@@ -548,106 +483,89 @@
 
                                         <TextView
                                             android:id="@+id/thu_p1_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="1111111111111111111111111" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p1_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/thu_p2_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p2_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/thu_p2_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/thu_p2_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p2_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/thu_p3_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p3_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/thu_p3_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/thu_p3_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p3_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/thu_p4_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p4_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/thu_p4_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/thu_p4_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/thu_p4_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
 
                                     </TableRow>
 
@@ -667,8 +585,7 @@
 
                                 <TextView
                                     android:id="@+id/fri"
-                                    style="@style/Text.WeekName"
-                                    android:text="@string/app_name" />
+                                    style="@style/Text.WeekName" />
 
                             </TableRow>
 
@@ -687,18 +604,15 @@
                                         <TextView
 
                                             android:id="@+id/fri_p1_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p1_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="222222222222222222222222222222222222222222" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/fri_p1_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
 
                                     </TableRow>
 
@@ -706,106 +620,89 @@
 
                                         <TextView
                                             android:id="@+id/fri_p1_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="1111111111111111111111111" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p1_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/fri_p2_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p2_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/fri_p2_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/fri_p2_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p2_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/fri_p3_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p3_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/fri_p3_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/fri_p3_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p3_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/fri_p4_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p4_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/fri_p4_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/fri_p4_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/fri_p4_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
 
                                     </TableRow>
 
@@ -821,8 +718,7 @@
 
                                 <TextView
                                     android:id="@+id/sat"
-                                    style="@style/Text.WeekName"
-                                    android:text="@string/app_name" />
+                                    style="@style/Text.WeekName" />
 
                             </TableRow>
 
@@ -841,18 +737,15 @@
                                         <TextView
 
                                             android:id="@+id/sat_p1_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p1_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="222222222222222222222222222222222222222222" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/sat_p1_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
 
                                     </TableRow>
 
@@ -860,106 +753,89 @@
 
                                         <TextView
                                             android:id="@+id/sat_p1_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="1111111111111111111111111" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p1_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/sat_p2_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p2_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/sat_p2_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/sat_p2_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p2_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/sat_p3_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p3_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/sat_p3_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw1">
 
                                         <TextView
                                             android:id="@+id/sat_p3_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p3_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/sat_p4_start_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p4_predmet"
-                                            style="@style/Text.Predmet"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Predmet" />
 
                                         <TextView
                                             android:id="@+id/sat_p4_kab"
-                                            style="@style/Text.Kab"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Kab" />
                                     </TableRow>
 
                                     <TableRow style="@style/TableRaw2">
 
                                         <TextView
                                             android:id="@+id/sat_p4_finish_time"
-                                            style="@style/Text.Time"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Time" />
 
                                         <TextView
                                             android:id="@+id/sat_p4_fam"
-                                            style="@style/Text.Fam"
-                                            android:text="@string/app_name" />
+                                            style="@style/Text.Fam" />
 
                                     </TableRow>
 
@@ -986,8 +862,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/colorPrimaryDark"
-        app:menu="@menu/navigation"
         app:itemIconTint="@drawable/nav_color_menu"
-        app:itemTextColor="@drawable/nav_color_menu"/>
+        app:itemTextColor="@drawable/nav_color_menu"
+        app:menu="@menu/navigation" />
 
 </LinearLayout>

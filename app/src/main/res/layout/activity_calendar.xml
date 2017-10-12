@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:textColor="@color/colorWhite"
+    android:textColorPrimary="@color/colorWhite"
+
+    >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,7 +17,10 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        android:minHeight="?attr/actionBarSize" />
+        android:minHeight="?attr/actionBarSize"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColorPrimary="@color/colorWhite"
+        />
     <CalendarView
         android:id="@+id/calendarView1"
         style="@android:style/Widget.Holo.Light.CalendarView"
@@ -25,6 +32,7 @@
         android:selectedWeekBackgroundColor="#42A5F5"
         android:shownWeekCount="8"
         android:textAlignment="center"
+        android:textColor="@color/colorBlack"
         android:weekNumberColor="#0000ff"
         android:weekSeparatorLineColor="#0D47A1" />
 
