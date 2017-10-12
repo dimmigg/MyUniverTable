@@ -200,6 +200,7 @@ public class MainActivity extends AppCompatActivity {
 
     static final String SAVED_TEXT="SAVED_TEXT";
     static SharedPreferences sPref;
+    BottomNavigationView navigation;
 
 //    final static String mon_1_p1_time_start = "mon_1_p1_time_start";
 
@@ -378,9 +379,9 @@ public class MainActivity extends AppCompatActivity {
         mTextSatFam4 = (TextView) findViewById(R.id.sat_p4_fam);
 
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        navigation.setSelectedItemId(R.id.week1);
+
         // получаем SharedPreferences, которое работает с файлом настроек
         sp = PreferenceManager.getDefaultSharedPreferences(this);
     }
@@ -479,7 +480,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
 //            mTextMessage.setTextSize(14);
         }
-
+        navigation.setSelectedItemId(R.id.week1);
         loadWeek1();
         print_all_1();
 //        navigation.setSelectedItemId(R.id.navigation_home);
