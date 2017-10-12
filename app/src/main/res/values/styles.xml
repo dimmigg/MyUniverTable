@@ -6,6 +6,21 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:navigationBarColor">@color/navigatoinBarColor</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+
+
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

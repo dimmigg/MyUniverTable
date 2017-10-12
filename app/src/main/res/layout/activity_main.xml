@@ -985,7 +985,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation" />
+        android:background="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        app:itemIconTint="@drawable/nav_color_menu"
+        app:itemTextColor="@drawable/nav_color_menu"/>
 
 </LinearLayout>
