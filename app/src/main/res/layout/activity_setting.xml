@@ -3,12 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListPreference
-        android:entries="@array/setArrWeekVal"
-        android:entryValues="@array/setArrWeek"
-        android:key="chek"
-        android:summary="@string/chkBoxSettingVal"
-        android:title="@string/chkBoxSetting" />
+    <CheckBoxPreference
+        android:key="cheks"
+        android:title="@string/chkBoxSetting" >
+    </CheckBoxPreference>
 
 
 

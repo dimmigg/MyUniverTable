@@ -1,16 +1,16 @@
 package com.dimka.myunivertable;
 
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.CalendarView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CalendarActivity extends AppCompatActivity {
 
-    SharedPreferences sp;
+//    SharedPreferences sp;
     TextView mText1;
     TextView mText2;
 
@@ -25,8 +25,14 @@ public class CalendarActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+
+        mText1 = (TextView) findViewById(R.id.textWeek1);
+        mText2 = (TextView) findViewById(R.id.textWeek2);
+
         CalendarView calendarView = (CalendarView) findViewById(R.id.calendarView1);
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+
+
 
             @Override
             public void onSelectedDayChange(CalendarView view, int year,
@@ -37,27 +43,23 @@ public class CalendarActivity extends AppCompatActivity {
 
 
 
-//                String selectedDate = new StringBuilder().append(mMonth + 1)
-//                        .append("-").append(mDay).append("-").append(mYear)
-//                        .append(" ").toString();
-//                Toast.makeText(getApplicationContext(), selectedDate, Toast.LENGTH_LONG).show();
-
-                mText1 = (TextView) findViewById(R.id.textWeek1);
-                mText2 = (TextView) findViewById(R.id.textWeek2);
 
             }
-        });
-//
-//        int TimeTextSize = sp.getInt("chek", 0);
-//        if (TimeTextSize == 1) {
-//            mText1.setText(R.string.chetn);
-//            mText2.setText(R.string.nechetn);
-//        } else {
-//            mText1.setText(R.string.nechetn);
-//            mText2.setText(R.string.chetn);
-//        }
 
-//        boolean chk = Boolean.parseBoolean(sp.getBoolean("chb", true));
+        });
+
     }
 
+
+    protected void onResume() {
+        super.onResume();
+        Boolean chek = MainActivity.sp.getBoolean("cheks", false);
+        if (chek) {
+            mText1.setText(R.string.chetn1);
+            mText2.setText(R.string.nechetn1);
+        }else{
+            mText1.setText(R.string.nechetn2);
+            mText2.setText(R.string.chetn2);
+        }
+    }
 }

@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
 
 //    final static String mon_1_p1_time_start = "mon_1_p1_time_start";
 
-    SharedPreferences sp; //для хранения настроек
+   static SharedPreferences sp; //для хранения настроек
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -245,6 +245,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initializeNavigationDrawer(toolbar);
+
+        sp = PreferenceManager.getDefaultSharedPreferences(this);
 
         mTextMon = (TextView) findViewById(R.id.mon);
         mTextMonStartTime1 = (TextView) findViewById(R.id.mon_p1_start_time);

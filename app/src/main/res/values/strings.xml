@@ -9,8 +9,7 @@
     <string name="edit">Редактор</string>
     <string name="about">О программе</string>
 
-    <string name="chkBoxSetting">Первая неделя четная/нечетная</string>
-    <string name="chkBoxSettingVal">1 - четная, 2 - четная</string>
+    <string name="chkBoxSetting">Первая неделя четная/не четная</string>
 
     <string name="setTextSize">Размер шрифта</string>
     <string name="setTextSizeVal">Выбрать размер шрифта</string>
@@ -44,8 +43,11 @@
     <string name="title_activity_calendar">Календарь</string>
     <string name="title_activity_edit">Редактор пар</string>
 
-    <string name="chetn">Не четная - числитель(1)</string>
-    <string name="nechetn">Четная - знаменатель(2)</string>
+    <string name="chetn1">Не четная - числитель(1)</string>
+    <string name="nechetn1">Четная - знаменатель(2)</string>
+
+    <string name="chetn2">Четная - числитель(1)</string>
+    <string name="nechetn2">Не четная - знаменатель(2)</string>
 
     <string name="mon1">Понедельник(1)</string>
     <string name="tue1">Вторник(1)</string>
