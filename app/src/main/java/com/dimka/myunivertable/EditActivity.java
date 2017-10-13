@@ -68,7 +68,7 @@ public class EditActivity extends AppCompatActivity {
     String thu2 = "ЧЕТВЕРГ (2)";
     String fri2 = "ПЯТНИЦА (2)";
     String sat2 = "СУББОТА (2)";
-
+//ключи для сохранения данных
     final static String mon_1_p1_time_start = "mon_1_p1_time_start";
     final static String tue_1_p1_time_start = "tue_1_p1_time_start";
     final static String wed_1_p1_time_start = "wed_1_p1_time_start";
@@ -598,7 +598,7 @@ public class EditActivity extends AppCompatActivity {
         Toast.makeText(this, "Выберите день недели", Toast.LENGTH_SHORT).show();
     }
 
-    @Override
+    @Override//назад нужно 2 раза кликнуть
     public void onBackPressed() {
         if (back_pressed + 2000 > System.currentTimeMillis())
             super.onBackPressed();
@@ -609,7 +609,7 @@ public class EditActivity extends AppCompatActivity {
     }
 
 
-    void saveText(String name, String mesto) {
+    void saveText(String name, String mesto) { //сохранение данных
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         SharedPreferences.Editor ed = sPref.edit();
         ed.putString(name, mesto); //SAVED_TEXT - name, p1_fam.getText().toString() - mesto
@@ -619,14 +619,14 @@ public class EditActivity extends AppCompatActivity {
 
     }
 
-    String loadText(String weekDay) {
+    String loadText(String weekDay) { //подгрузка данных
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         return sPref.getString(weekDay, "");
         // String savedText = sPref.getString(SAVED_TEXT, "");
         //Toast.makeText(this, "a tut text" + savedText, Toast.LENGTH_SHORT).show();
     }
 
-
+//отображение данных
     private void printMon1() {
         p1_time_start.setText(loadText(mon_1_p1_time_start));
         p1_time_finish.setText(loadText(mon_1_p1_time_finish));
@@ -783,7 +783,6 @@ public class EditActivity extends AppCompatActivity {
         p4_fam.setText(loadText(sat_1_p4_fam));
 
     }
-
 
     private void printMon2() {
         p1_time_start.setText(loadText(mon_2_p1_time_start));
@@ -942,7 +941,7 @@ public class EditActivity extends AppCompatActivity {
 
     }
 
-
+//сохранение данных
     private void saveMon1() {
         saveText(mon_1_p1_time_start, p1_time_start.getText().toString());
         saveText(mon_1_p1_time_finish, p1_time_finish.getText().toString());
@@ -969,7 +968,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(mon_1_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveTue1() {
         saveText(tue_1_p1_time_start, p1_time_start.getText().toString());
         saveText(tue_1_p1_time_finish, p1_time_finish.getText().toString());
@@ -996,7 +994,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(tue_1_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveWed1() {
         saveText(wed_1_p1_time_start, p1_time_start.getText().toString());
         saveText(wed_1_p1_time_finish, p1_time_finish.getText().toString());
@@ -1023,7 +1020,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(wed_1_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveThu1() {
         saveText(thu_1_p1_time_start, p1_time_start.getText().toString());
         saveText(thu_1_p1_time_finish, p1_time_finish.getText().toString());
@@ -1050,7 +1046,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(thu_1_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveFri1() {
         saveText(fri_1_p1_time_start, p1_time_start.getText().toString());
         saveText(fri_1_p1_time_finish, p1_time_finish.getText().toString());
@@ -1077,7 +1072,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(fri_1_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveSat1() {
         saveText(sat_1_p1_time_start, p1_time_start.getText().toString());
         saveText(sat_1_p1_time_finish, p1_time_finish.getText().toString());
@@ -1105,8 +1099,6 @@ public class EditActivity extends AppCompatActivity {
 
     }
 
-
-
     private void saveMon2() {
         saveText(mon_2_p1_time_start, p1_time_start.getText().toString());
         saveText(mon_2_p1_time_finish, p1_time_finish.getText().toString());
@@ -1133,7 +1125,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(mon_2_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveTue2() {
         saveText(tue_2_p1_time_start, p1_time_start.getText().toString());
         saveText(tue_2_p1_time_finish, p1_time_finish.getText().toString());
@@ -1160,7 +1151,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(tue_2_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveWed2() {
         saveText(wed_2_p1_time_start, p1_time_start.getText().toString());
         saveText(wed_2_p1_time_finish, p1_time_finish.getText().toString());
@@ -1187,7 +1177,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(wed_2_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveThu2() {
         saveText(thu_2_p1_time_start, p1_time_start.getText().toString());
         saveText(thu_2_p1_time_finish, p1_time_finish.getText().toString());
@@ -1214,7 +1203,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(thu_2_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveFri2() {
         saveText(fri_2_p1_time_start, p1_time_start.getText().toString());
         saveText(fri_2_p1_time_finish, p1_time_finish.getText().toString());
@@ -1241,7 +1229,6 @@ public class EditActivity extends AppCompatActivity {
         saveText(fri_2_p4_fam, p4_fam.getText().toString());
 
     }
-
     private void saveSat2() {
         saveText(sat_2_p1_time_start, p1_time_start.getText().toString());
         saveText(sat_2_p1_time_finish, p1_time_finish.getText().toString());

@@ -2,6 +2,7 @@ package com.dimka.myunivertable;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
@@ -239,6 +240,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Отображение только портретный режим
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -387,7 +389,7 @@ public class MainActivity extends AppCompatActivity {
         sp = PreferenceManager.getDefaultSharedPreferences(this);
     }
 
-
+//вывод и настройка бокового меню
     private void initializeNavigationDrawer(Toolbar toolbar) {
         drawerResult = new Drawer()
                 .withActivity(this)
@@ -472,17 +474,17 @@ public class MainActivity extends AppCompatActivity {
                 .build();
     }
 
-    //при востановлениии изменяет размер
+
     protected void onResume() {
         super.onResume();
-        loadSize();
+        loadSize();    //при востановлениии изменяет размер
         navigation.setSelectedItemId(R.id.week1);
-        loadWeek1();
-        print_all_1();
+        loadWeek1(); //подгрузка данных 1 недели
+        print_all_1(); //отображение 1 недели
 //        navigation.setSelectedItemId(R.id.navigation_home);
     }
 
-    private void loadSize() {
+    private void loadSize() { //подгрузка размера шрифтов из настроек
         int timeSize = Integer.parseInt(sp.getString("timeSize", "1"));
         int predmetSize = Integer.parseInt(sp.getString("predmetSize", "1"));
         int kabSize = Integer.parseInt(sp.getString("kabSize", "1"));
@@ -512,7 +514,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+//показ недель
     void print_all_1(){
         mTextMon.setText(R.string.mon1);
         mTextTue.setText(R.string.tue1);
@@ -767,7 +769,7 @@ public class MainActivity extends AppCompatActivity {
         mTextSatFam4.setText(fam4);
     }
 
-
+//подгрузка данных
     String loadText(String name) {
         sPref = getSharedPreferences("MyPref", MODE_PRIVATE);
         return sPref.getString(name, "");
@@ -1099,7 +1101,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //    }
 
-
+//подгрузка размера шрифтов
     void loadTimeSize(int size){
         mTextMonStartTime1.setTextSize(size);
         mTextMonStartTime2.setTextSize(size);

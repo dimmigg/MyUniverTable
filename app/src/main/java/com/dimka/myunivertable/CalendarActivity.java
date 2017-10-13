@@ -52,6 +52,7 @@ public class CalendarActivity extends AppCompatActivity {
 
     protected void onResume() {
         super.onResume();
+        //проверка чекбокса в настройках и вывод текста
         Boolean chek = MainActivity.sp.getBoolean("cheks", false);
         if (chek) {
             mText1.setText(R.string.chetn1);
