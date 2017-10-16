@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context="com.dimka.myunivertable.EditActivity">
+    tools:context="com.dimka.myunivertable.EditActivity"
+    >
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -13,7 +14,8 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
-        android:minHeight="?attr/actionBarSize" />
+        android:minHeight="?attr/actionBarSize"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -38,7 +40,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:gravity="center"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
                 <TextView
                     android:id="@+id/textView"
@@ -58,6 +61,7 @@
             </LinearLayout>
 
             <TableLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center">
@@ -71,7 +75,8 @@
                         style="@style/Text.Time"
                         android:ems="3"
                         android:hint="@string/e_time"
-                        android:inputType="time" />
+                        android:inputType="time"
+                        />
 
                     <EditText
                         android:id="@+id/p1_predmet"

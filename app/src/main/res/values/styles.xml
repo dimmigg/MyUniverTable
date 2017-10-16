@@ -14,8 +14,13 @@
         <item name="android:textColorSecondary">@color/colorWhite</item>
     </style>
     <style name="AppTheme.Edit">
+        <item name="android:textColorPrimary">@color/colorWhite</item>
 
-        <item name="android:textColorSecondary">@color/colorBlack</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+        <item name="colorControlHighlight">@color/colorBlack</item>
+
+        <item name="android:textColorSecondary">@color/colorWhite</item>
     </style>
 
     <style name="AppTheme.Dark" parent="Theme.AppCompat.Light.NoActionBar">
@@ -34,6 +39,9 @@
         <item name="android:colorBackground">@color/background</item>
         <item name="android:textColorPrimary">@color/colorWhite</item>
         <item name="android:navigationBarColor">@color/navigatoinBarColor</item>
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+
+
 
 
     </style>
@@ -46,6 +54,9 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorBlack</item>
+
     </style>
 
     <style name="Text.Time" >
