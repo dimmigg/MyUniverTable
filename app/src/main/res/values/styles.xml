@@ -23,6 +23,8 @@
         <item name="android:textColorSecondary">@color/colorWhite</item>
     </style>
 
+
+
     <style name="AppTheme.Dark" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="colorAccent">@color/colorAccentDark</item>
@@ -40,8 +42,17 @@
         <item name="android:textColorPrimary">@color/colorWhite</item>
         <item name="android:navigationBarColor">@color/navigatoinBarColor</item>
         <item name="android:textColorSecondary">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
 
+    <style name="AppTheme.Light.Calendar" parent="Theme.AppCompat.Light.NoActionBar">
 
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/navigatoinBarColor</item>
+        <item name="android:textColorSecondary">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorBlack</item>
 
 
     </style>
